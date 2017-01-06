@@ -1,0 +1,9 @@
+github "onevcat/Kingfisher"
+github "Alamofire/Alamofire"
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
+github "ReSwift/ReSwift"
+github "SwiftyJSON/SwiftyJSON"
+github "DaveWoodCom/XCGLogger" ~> 4.0.0
+github "keitaoouchi/IoniconsKit"
+
+
