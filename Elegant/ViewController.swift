@@ -10,24 +10,38 @@ import UIKit
 import RxCocoa
 
 class ViewController: UIViewController {
+    var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.red
-        let button = UIButton(frame: CGRect(x: 20, y: 60, width: 200, height: 44))
-        button.backgroundColor = UIColor.red
+
+        let button = UIButton(frame: CGRect(x: 20, y: 70, width: 200, height: 44))
+        button.addTarget(self, action: #selector(click), for: .touchUpInside)
+        button.backgroundColor = UIColor.green
         view.addSubview(button)
-        
-        
+        label = UILabel(frame: CGRect(x: 100, y: 120, width: 120, height: 60))
+        label.backgroundColor = .red
+        view.addSubview(label)
     }
     
     func click() {
+        DispatchQueue.main.async {
+            self.label.frame = CGRect(x: 40, y: 200, width: 40, height: 40)
+            self.label.backgroundColor = .blue
+            self.label.text = "hello"
+            self.label.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        }
         
+//        DispatchQueue.main.sync {
+//            self.label.backgroundColor = .blue
+//            self.label.text = "hello"
+//            self.label.font = UIFont.systemFont(ofSize: UIFont.systemFontSize) 
+//        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let dest = DiscoverController()
-        present(dest, animated: true, completion: nil)
+//        let dest = DiscoverController()
+//        present(dest, animated: true, completion: nil)
     }
     
 }

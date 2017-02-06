@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CMt-pa-6Wb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CMt-pa-6Wb">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +13,7 @@
             <objects>
                 <navigationController id="UXq-tg-w3z" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="featured" id="1xy-Su-Uv6"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zt3-M2-9UN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zt3-M2-9UN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -49,7 +49,7 @@
             <objects>
                 <navigationController id="1aw-Ko-9Vl" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="yz1-vn-yzq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Odn-1T-0jj">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Odn-1T-0jj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -66,7 +66,7 @@
             <objects>
                 <navigationController id="lIN-qh-zPf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="Gpe-fe-klY"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYd-kT-XRF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="sYd-kT-XRF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -83,7 +83,7 @@
             <objects>
                 <navigationController id="swl-V7-syg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="IAJ-Ef-nOq"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="epV-o7-F5V">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="epV-o7-F5V">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -93,7 +93,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gab-ED-K8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="-1403"/>
+            <point key="canvasLocation" x="-478" y="-1522"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="bDw-iN-ZIR">

@@ -25,3 +25,7 @@ func digitParse() {
     let origin = 9.4
     print(ceil(origin), floor(origin), round(origin))
 }
+
+extension Array {
+    
+}
