@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C065DC31E589F8B0009F7F6 /* Any+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C065DC21E589F8B0009F7F6 /* Any+Extension.swift */; };
 		3C20F6981DF2FBE100D6C5BA /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C20F6971DF2FBE100D6C5BA /* DiscoverController.swift */; };
 		3C30EFCE1DB7646D0030C84B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C30EFCD1DB7646D0030C84B /* String+Extension.swift */; };
 		3C30EFCF1DB7730C0030C84B /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C340D6E1DAF1C0600E60A62 /* Kingfisher.framework */; };
@@ -111,6 +112,7 @@
 
 /* Begin PBXFileReference section */
 		39FE27A99EBDA0B574DED1EA /* Pods_Elegant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elegant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C065DC21E589F8B0009F7F6 /* Any+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Any+Extension.swift"; sourceTree = "<group>"; };
 		3C20F6971DF2FBE100D6C5BA /* DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
 		3C30EFCD1DB7646D0030C84B /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		3C30EFD91DB773270030C84B /* IoniconsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IoniconsKit.framework; path = Carthage/Build/iOS/IoniconsKit.framework; sourceTree = "<group>"; };
@@ -355,6 +357,7 @@
 				3C3410BE1DB0C4B000E60A62 /* Array+Extension.swift */,
 				3C30EFCD1DB7646D0030C84B /* String+Extension.swift */,
 				3CBA4DD81DDDA380007FDEB0 /* UIImage+Extision.swift */,
+				3C065DC21E589F8B0009F7F6 /* Any+Extension.swift */,
 			);
 			path = BaseExt;
 			sourceTree = "<group>";
@@ -621,6 +624,7 @@
 				3CEF47551DAB8126002E63EF /* BaseTabBarController.swift in Sources */,
 				3C383ED61DAE306D00A8EACC /* CollectionViewCell.swift in Sources */,
 				3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */,
+				3C065DC31E589F8B0009F7F6 /* Any+Extension.swift in Sources */,
 				3C383ECA1DAE2A4B00A8EACC /* ScrollViewController.swift in Sources */,
 				3C3410AD1DB0851700E60A62 /* ListSectionController.swift in Sources */,
 				3C3410B71DB0884000E60A62 /* ListSupplementaryViewSource.swift in Sources */,
