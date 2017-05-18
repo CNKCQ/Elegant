@@ -10,10 +10,12 @@ import Foundation
 
 extension String {
 
+    /// The string length property returns the count of character in the string.
     var length: Int {
         return characters.count
     }
 
+    /// Returns a localized string, using the main bundle.
     var locale: String {
         return NSLocalizedString(self, tableName: "Default", bundle: Bundle.main, value: "", comment: "")
     }

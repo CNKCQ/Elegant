@@ -38,7 +38,6 @@
 		3CEF47181DAB808E002E63EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CEF47161DAB808E002E63EF /* LaunchScreen.storyboard */; };
 		3CEF47481DAB8126002E63EF /* BaseConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47201DAB8126002E63EF /* BaseConfig.swift */; };
 		3CEF47491DAB8126002E63EF /* BaseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47211DAB8126002E63EF /* BaseDelegate.swift */; };
-		3CEF474B1DAB8126002E63EF /* NSBundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47241DAB8126002E63EF /* NSBundle+Extension.swift */; };
 		3CEF47501DAB8126002E63EF /* UIScrollView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47291DAB8126002E63EF /* UIScrollView+Extenstion.swift */; };
 		3CEF47511DAB8126002E63EF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF472A1DAB8126002E63EF /* UIView+Extension.swift */; };
 		3CEF47531DAB8126002E63EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF472D1DAB8126002E63EF /* BaseViewController.swift */; };
@@ -50,7 +49,6 @@
 		3CEF47621DAB8127002E63EF /* UIImageView+Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */; };
 		3CEF47631DAB8127002E63EF /* UIView+FrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */; };
 		3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47461DAB8126002E63EF /* FileTool.swift */; };
-		3CEF47651DAB8127002E63EF /* Operator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47471DAB8126002E63EF /* Operator.swift */; };
 		3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47661DAB8136002E63EF /* TabBarController.swift */; };
 		3CEF476A1DAB8136002E63EF /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47671DAB8136002E63EF /* TableController.swift */; };
 		3CEF48041DAD12BB002E63EF /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47FF1DAD12BB002E63EF /* NibLoadable.swift */; };
@@ -74,6 +72,9 @@
 		AA5094A41ECD920B002DC62E /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094A31ECD920B002DC62E /* Bundle+.swift */; };
 		AA5094A61ECD922E002DC62E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094A51ECD922E002DC62E /* Date+.swift */; };
 		AA5094A81ECD92A0002DC62E /* Locale+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094A71ECD92A0002DC62E /* Locale+.swift */; };
+		AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094A91ECDDDAA002DC62E /* Int+.swift */; };
+		AA5094AC1ECDDE95002DC62E /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094AB1ECDDE95002DC62E /* Double+.swift */; };
+		AA5094AE1ECDDECB002DC62E /* Float+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094AD1ECDDECB002DC62E /* Float+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -127,7 +128,6 @@
 		3CEF47191DAB808E002E63EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CEF47201DAB8126002E63EF /* BaseConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseConfig.swift; sourceTree = "<group>"; };
 		3CEF47211DAB8126002E63EF /* BaseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseDelegate.swift; sourceTree = "<group>"; };
-		3CEF47241DAB8126002E63EF /* NSBundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Extension.swift"; sourceTree = "<group>"; };
 		3CEF47291DAB8126002E63EF /* UIScrollView+Extenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extenstion.swift"; sourceTree = "<group>"; };
 		3CEF472A1DAB8126002E63EF /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3CEF472D1DAB8126002E63EF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +139,6 @@
 		3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Web.swift"; sourceTree = "<group>"; };
 		3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FrameLayout.swift"; sourceTree = "<group>"; };
 		3CEF47461DAB8126002E63EF /* FileTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTool.swift; sourceTree = "<group>"; };
-		3CEF47471DAB8126002E63EF /* Operator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operator.swift; sourceTree = "<group>"; };
 		3CEF47661DAB8136002E63EF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3CEF47671DAB8136002E63EF /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
 		3CEF47FF1DAD12BB002E63EF /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
@@ -164,6 +163,9 @@
 		AA5094A31ECD920B002DC62E /* Bundle+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		AA5094A51ECD922E002DC62E /* Date+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		AA5094A71ECD92A0002DC62E /* Locale+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Locale+.swift"; sourceTree = "<group>"; };
+		AA5094A91ECDDDAA002DC62E /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		AA5094AB1ECDDE95002DC62E /* Double+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		AA5094AD1ECDDECB002DC62E /* Float+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -310,7 +312,6 @@
 		3CEF47221DAB8126002E63EF /* BaseExt */ = {
 			isa = PBXGroup;
 			children = (
-				3CEF47241DAB8126002E63EF /* NSBundle+Extension.swift */,
 				3CEF47291DAB8126002E63EF /* UIScrollView+Extenstion.swift */,
 				3CEF472A1DAB8126002E63EF /* UIView+Extension.swift */,
 				3CBA4DD81DDDA380007FDEB0 /* UIImage+Extision.swift */,
@@ -368,7 +369,6 @@
 			isa = PBXGroup;
 			children = (
 				3CEF47461DAB8126002E63EF /* FileTool.swift */,
-				3CEF47471DAB8126002E63EF /* Operator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -437,6 +437,9 @@
 				AA5094A31ECD920B002DC62E /* Bundle+.swift */,
 				AA5094A51ECD922E002DC62E /* Date+.swift */,
 				AA5094A71ECD92A0002DC62E /* Locale+.swift */,
+				AA5094A91ECDDDAA002DC62E /* Int+.swift */,
+				AA5094AB1ECDDE95002DC62E /* Double+.swift */,
+				AA5094AD1ECDDECB002DC62E /* Float+.swift */,
 			);
 			path = EleFoundation;
 			sourceTree = "<group>";
@@ -608,13 +611,14 @@
 				3CEF470E1DAB808E002E63EF /* AppDelegate.swift in Sources */,
 				3CEF47501DAB8126002E63EF /* UIScrollView+Extenstion.swift in Sources */,
 				3C660A741DAE3FD50004DEDA /* TestCell.swift in Sources */,
+				AA5094AE1ECDDECB002DC62E /* Float+.swift in Sources */,
 				3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */,
 				AA5094A61ECD922E002DC62E /* Date+.swift in Sources */,
 				3CEF48141DAD2910002E63EF /* TableViewCell.swift in Sources */,
+				AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */,
 				3CBF04F31DF11D1D00F9A289 /* MyTableController.swift in Sources */,
 				3CEF47611DAB8127002E63EF /* UIColor+RandomColor.swift in Sources */,
 				3CEF48121DAD2180002E63EF /* Ad.swift in Sources */,
-				3CEF47651DAB8127002E63EF /* Operator.swift in Sources */,
 				3C20F6981DF2FBE100D6C5BA /* DiscoverController.swift in Sources */,
 				3CEF47541DAB8126002E63EF /* BaseNavigationController.swift in Sources */,
 				AA5094A41ECD920B002DC62E /* Bundle+.swift in Sources */,
@@ -626,13 +630,13 @@
 				3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */,
 				AA5094A81ECD92A0002DC62E /* Locale+.swift in Sources */,
 				3C383ED01DAE2E5E00A8EACC /* TableGroupController.swift in Sources */,
-				3CEF474B1DAB8126002E63EF /* NSBundle+Extension.swift in Sources */,
 				3CEF47601DAB8126002E63EF /* String+CacheMenu.swift in Sources */,
 				AA5094951ECD89D0002DC62E /* README.md in Sources */,
 				3C383ED21DAE2F5D00A8EACC /* CollectionViewController.swift in Sources */,
 				3CEF48051DAD12BB002E63EF /* NibOwnerLoadable.swift in Sources */,
 				3CEF48171DADCD37002E63EF /* Tools.swift in Sources */,
 				3CEF48101DAD1EC0002E63EF /* Adable.swift in Sources */,
+				AA5094AC1ECDDE95002DC62E /* Double+.swift in Sources */,
 				3C383ECE1DAE2E2D00A8EACC /* TableListController.swift in Sources */,
 				AA50949C1ECD9062002DC62E /* Set+.swift in Sources */,
 				3CEF48081DAD12BB002E63EF /* UITableView+Reusable.swift in Sources */,
