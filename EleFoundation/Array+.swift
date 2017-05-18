@@ -113,11 +113,6 @@ public extension Array where Element: Equatable {
     /// - Parameter element: a given element
     /// - Returns: What the index of the element at the array
     func index(of element: Element) -> Int {
-        for idx in 0..<self.count {
-            while self[idx] == element {
-                return idx
-            }
-        }
-        return -1
+        return index(of: element) ?? -1
     }
 }
