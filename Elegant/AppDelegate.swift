@@ -17,13 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        let tab = self.window?.rootViewController! as! UITabBarController
-//        let nav = tab.childViewControllers.first as! UINavigationController
-//        let derived = nav.topViewController! as! ViewController
-//        _ = ViewController(nibName: "home", bundle: Bundle.main)
-//        let board = UIStoryboard(name: "Main", bundle: Bundle.main)
-//        con = board.instantiateViewController(withIdentifier: "home") as! ViewController
-        print(con, "🌹")
+        let arr = [1, 3, 3, 4]
+        print("🌹", arr.toString, "🌹")
         
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        let rootController = ViewController()

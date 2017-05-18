@@ -11,7 +11,7 @@ import UIKit
 class TabBarController: BaseTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        let table = UITableViewController()
+        _ = UITableViewController()
     }
 
     override func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
