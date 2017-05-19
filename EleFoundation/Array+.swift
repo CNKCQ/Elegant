@@ -13,6 +13,17 @@ public extension Array {
     var length: Int {
         return count
     }
+
+    /// Returns an array containing this sequence shuffled
+    var shuffled: Array {
+        var elements = self
+        return elements.shuffle()
+    }
+
+    /// Returns an element from this sequence shuffled
+    var random: Element {
+        return shuffled[0]
+    }
 }
 
 public extension Array {
@@ -81,6 +92,19 @@ public extension Array {
     mutating func concat(_ elements: [Element]) -> [Element] {
         return self + elements
     }
+
+    /// Shuffles this sequence in place
+    ///
+    /// - Returns: A new shuffled Array
+    @discardableResult
+    mutating func shuffle() -> Array {
+        indices.dropLast().forEach {
+            guard case let index = Int(arc4random_uniform(UInt32(count - $0))) + $0, index != $0 else { return }
+            swap(&self[$0], &self[index])
+        }
+        return self
+    }
+
 
 }
 
