@@ -19,6 +19,16 @@ extension String {
     var locale: String {
         return NSLocalizedString(self, tableName: "Default", bundle: Bundle.main, value: "", comment: "")
     }
+    
+    /// Returns a lowercase version of the string.
+    var lowercased: String {
+        return lowercased()
+    }
+
+    /// Returns an uppercase version of the string.
+    var uppercased:String {
+        return uppercased()
+    }
 
 }
 

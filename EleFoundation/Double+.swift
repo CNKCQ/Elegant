@@ -14,7 +14,6 @@ extension Double {
         return String(self)
     }
 
-
     /// Returns a absolute value of Double.
     var abs: Double {
         return self > 0 ? self : -self
