@@ -78,6 +78,7 @@
 		AAD96B6B1ED2DB8A00779214 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */; };
 		AAD96B6D1ED2E3B600779214 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */; };
 		AAD96B6F1ED2E81A00779214 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6E1ED2E81A00779214 /* UIFont+.swift */; };
+		AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B701ED2EAC300779214 /* UITableView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -172,6 +173,7 @@
 		AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		AAD96B6E1ED2E81A00779214 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		AAD96B701ED2EAC300779214 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -457,6 +459,7 @@
 				AAD96B661ED2CC9C00779214 /* UIColor+.swift */,
 				AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */,
 				AAD96B6E1ED2E81A00779214 /* UIFont+.swift */,
+				AAD96B701ED2EAC300779214 /* UITableView+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -637,6 +640,7 @@
 				AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */,
 				3CBF04F31DF11D1D00F9A289 /* MyTableController.swift in Sources */,
 				3CEF48121DAD2180002E63EF /* Ad.swift in Sources */,
+				AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */,
 				3C20F6981DF2FBE100D6C5BA /* DiscoverController.swift in Sources */,
 				3CEF47541DAB8126002E63EF /* BaseNavigationController.swift in Sources */,
 				AA5094A41ECD920B002DC62E /* Bundle+.swift in Sources */,
