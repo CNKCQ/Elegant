@@ -9,17 +9,13 @@
 import Foundation
 
 extension Float {
-
 }
 
 extension Float32 {
-
 }
 
 extension Float64 {
-
 }
 
 extension Float80 {
-
 }

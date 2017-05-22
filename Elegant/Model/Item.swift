@@ -11,10 +11,9 @@ import Foundation
 class Item {
     public var name = ""
     public var title = ""
-    
+
     public init(name: String, title: String) {
         self.name = name
         self.title = title
     }
-
 }

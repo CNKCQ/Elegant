@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 // MARK: -  System fonts
 public extension UIFont {
 
@@ -27,5 +26,4 @@ public extension UIFont {
     public class var systemFont: UIFont {
         return systemFont(ofSize: systemFontSize)
     }
-
 }

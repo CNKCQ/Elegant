@@ -21,7 +21,6 @@ public extension UIColor {
     }
 }
 
-
 public extension UIColor {
 
     /// See: https://developer.apple.com/ios/human-interface-guidelines/visual-design/color/

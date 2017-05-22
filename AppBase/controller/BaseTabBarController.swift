@@ -17,9 +17,9 @@ class BaseTabBarController: UITabBarController {
 }
 
 extension BaseTabBarController: UITabBarControllerDelegate {
-    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    func tabBarController(_: UITabBarController, shouldSelect _: UIViewController) -> Bool {
         return true
     }
 
-    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {}
+    override func tabBar(_: UITabBar, didSelect _: UITabBarItem) {}
 }

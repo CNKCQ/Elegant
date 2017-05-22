@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public extension Int8 {
     ///  Returns a string representing the Int.
     var toString: String {

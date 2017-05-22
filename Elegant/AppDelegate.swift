@@ -10,24 +10,23 @@ import UIKit
 
 var con: UIViewController?
 
-//@UIApplicationMain
+// @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-//        let arr = ["1", "3", "2", "4", "5", "6"]
-//        print("🌹", arr.random, "🌹", arr.shuffled)
+    func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        //        let arr = ["1", "3", "2", "4", "5", "6"]
+        //        print("🌹", arr.random, "🌹", arr.shuffled)
 
         let dic = ["1": "one", "3": "three", "2": "two", "4": "four", "5": "five", "6": "six"]
         print("🌹", dic.entries(), "🌹")
-        self.array()
-        
-//        window = UIWindow(frame: UIScreen.main.bounds)
-//        let rootController = ViewController()
-//        window?.rootViewController = rootController
-//        window?.makeKeyAndVisible()
+        array()
+
+        //        window = UIWindow(frame: UIScreen.main.bounds)
+        //        let rootController = ViewController()
+        //        window?.rootViewController = rootController
+        //        window?.makeKeyAndVisible()
         return true
     }
 
@@ -35,5 +34,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func array() -> [String] {
         return ["", ""]
     }
-
 }

@@ -12,7 +12,7 @@ extension UserDefaults {
 
     public subscript(_ key: String) -> Any? {
         get {
-            return object(forKey:key)
+            return object(forKey: key)
         }
         set {
             set(newValue, forKey: key)

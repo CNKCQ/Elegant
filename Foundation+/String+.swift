@@ -19,17 +19,16 @@ public extension String {
     var locale: String {
         return NSLocalizedString(self, tableName: "Default", bundle: Bundle.main, value: "", comment: "")
     }
-    
+
     /// Returns a lowercase version of the string.
     var lowercased: String {
         return lowercased()
     }
 
     /// Returns an uppercase version of the string.
-    var uppercased:String {
+    var uppercased: String {
         return uppercased()
     }
-
 }
 
 extension String {
@@ -43,7 +42,7 @@ extension String {
     }
 
     public subscript(range: Range<Int>) -> String {
-        return substring(with: index(startIndex, offsetBy: range.lowerBound)..<index(startIndex, offsetBy: range.upperBound))
+        return substring(with: index(startIndex, offsetBy: range.lowerBound) ..< index(startIndex, offsetBy: range.upperBound))
     }
 
     public func stringByInsert(string: String) -> String? {
@@ -64,5 +63,4 @@ extension String {
         rest.remove(at: startIndex)
         return "\(first)\(rest)"
     }
-
 }

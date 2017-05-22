@@ -23,16 +23,17 @@ func threadContextStack() -> Any? {
     }
     return stack
 }
-open class ListSectionController : NSObject {
-    weak open var viewController: UIViewController?
-    weak open var collectionContext: ListCollectionContext?
+
+open class ListSectionController: NSObject {
+    open weak var viewController: UIViewController?
+    open weak var collectionContext: ListCollectionContext?
     open var inset: UIEdgeInsets = UIEdgeInsets.zero
     open var minimumLineSpacing: CGFloat = 0.0
     open var minimumInteritemSpacing: CGFloat = 0.0
-    weak open var supplementaryViewSource: ListSupplementaryViewSource?
-    weak open var displayDelegate: ListDisplayDelegate?
-    weak open var workingRangeDelegate: ListWorkingRangeDelegate?
-    weak open var scrollDelegate: ListScrollDelegate?
+    open weak var supplementaryViewSource: ListSupplementaryViewSource?
+    open weak var displayDelegate: ListDisplayDelegate?
+    open weak var workingRangeDelegate: ListWorkingRangeDelegate?
+    open weak var scrollDelegate: ListScrollDelegate?
     var hell: NSMapTable<UITableViewDelegate, UITableViewDataSource>?
     override init() {
     }

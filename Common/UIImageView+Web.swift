@@ -6,19 +6,19 @@
 //  Copyright © 2016年 Jack. All rights reserved.
 //
 
-/*import UIKit
-import Kingfisher
+/* import UIKit
+ import Kingfisher
 
-extension UIImageView {
+ extension UIImageView {
 
-    func setImageWithURL(URL: NSURL?,
-                            placeholderImage: Image? = nil,
-                            optionsInfo: KingfisherOptionsInfo? = nil,
-                            progressBlock: DownloadProgressBlock? = nil,
-                            completionHandler: CompletionHandler? = nil) -> RetrieveImageTask {
+ func setImageWithURL(URL: NSURL?,
+ placeholderImage: Image? = nil,
+ optionsInfo: KingfisherOptionsInfo? = nil,
+ progressBlock: DownloadProgressBlock? = nil,
+ completionHandler: CompletionHandler? = nil) -> RetrieveImageTask {
 
-        return  kf_setImageWithURL(URL, placeholderImage: placeholderImage, optionsInfo: optionsInfo, progressBlock: progressBlock, completionHandler: completionHandler)
+ return  kf_setImageWithURL(URL, placeholderImage: placeholderImage, optionsInfo: optionsInfo, progressBlock: progressBlock, completionHandler: completionHandler)
 
-    }
-}
+ }
+ }
  */

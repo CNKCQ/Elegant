@@ -9,14 +9,12 @@
 import UIKit
 
 extension UIView {
-    
 }
-
 
 // MARK: - Syntactic sugar for the frame
 extension UIView {
     var width: CGFloat {
-        get { return self.frame.size.width }
+        get { return frame.size.width }
         set {
             var frame = self.frame
             frame.size.width = newValue
@@ -25,7 +23,7 @@ extension UIView {
     }
 
     var height: CGFloat {
-        get { return self.frame.size.height }
+        get { return frame.size.height }
         set {
             var frame = self.frame
             frame.size.height = newValue
@@ -59,6 +57,7 @@ extension UIView {
             self.frame = frame
         }
     }
+
     var y: CGFloat {
         get { return self.frame.minY }
         set {
@@ -92,7 +91,7 @@ extension UIView {
     }
 
     var bottom: CGFloat {
-        get { return self.frame.maxY}
+        get { return self.frame.maxY }
         set {
             var frame = self.frame
             frame.origin.y = newValue - self.height
@@ -113,7 +112,7 @@ extension UIView {
         get { return self.x }
         set {
             var frame = self.frame
-            frame.origin.x  = newValue
+            frame.origin.x = newValue
             self.frame = frame
         }
     }

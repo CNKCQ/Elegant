@@ -19,6 +19,6 @@ class BaseViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-//        log.warning("内存警告⚠️\(classForCoder)")
+        //        log.warning("内存警告⚠️\(classForCoder)")
     }
 }

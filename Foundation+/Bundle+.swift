@@ -15,7 +15,6 @@ public extension Bundle {
         return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
     }
 
-
     /// The buildVersion
     static var buildVersion: String {
         return Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""

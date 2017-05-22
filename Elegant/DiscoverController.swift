@@ -9,7 +9,7 @@
 import UIKit
 
 class DiscoverController: MyTableController<UITableViewCell> {
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.red

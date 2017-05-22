@@ -11,7 +11,7 @@ import RxCocoa
 
 class ViewController: UIViewController {
     var label: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         label.backgroundColor = .red
         view.addSubview(label)
     }
-    
+
     func click() {
         DispatchQueue.main.async {
             self.label.frame = CGRect(x: 40, y: 200, width: 40, height: 40)
@@ -31,17 +31,16 @@ class ViewController: UIViewController {
             self.label.text = "hello"
             self.label.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
         }
-        
-//        DispatchQueue.main.sync {
-//            self.label.backgroundColor = .blue
-//            self.label.text = "hello"
-//            self.label.font = UIFont.systemFont(ofSize: UIFont.systemFontSize) 
-//        }
+
+        //        DispatchQueue.main.sync {
+        //            self.label.backgroundColor = .blue
+        //            self.label.text = "hello"
+        //            self.label.font = UIFont.systemFont(ofSize: UIFont.systemFontSize)
+        //        }
     }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        let dest = DiscoverController()
-//        present(dest, animated: true, completion: nil)
+
+    override func touchesBegan(_: Set<UITouch>, with _: UIEvent?) {
+        //        let dest = DiscoverController()
+        //        present(dest, animated: true, completion: nil)
     }
-    
 }

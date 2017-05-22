@@ -9,6 +9,4 @@
 import UIKit
 
 class MyTableController<C: UITableViewCell>: UIViewController {
-    
-    
 }

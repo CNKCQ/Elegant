@@ -17,6 +17,7 @@ extension Adable {
     var imageUrl: String {
         return ""
     }
+
     var detail: String {
         return ""
     }

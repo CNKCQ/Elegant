@@ -12,15 +12,15 @@ class TableViewController: ScrollViewController {
     var tableView: UITableView!
     var tableViewStyle: UITableViewStyle = .plain
     var cellType = TableViewCell.self
-    
+
     override func viewDidLoad() {
         onPrepare()
         super.viewDidLoad()
         onCreateTableView()
     }
-    
+
     func onPrepare() {}
-    
+
     func onCreateTableView() {
         tableView = UITableView(frame: view.bounds, style: tableViewStyle)
         tableView.delegate = self
@@ -30,26 +30,25 @@ class TableViewController: ScrollViewController {
         tableView.registerReusableCell(cellType: cellType)
         view.addSubview(tableView)
     }
-    
+
     override func reloadData() {
         tableView.reloadData()
     }
 }
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return items.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    func tableView(_ tableView: UITableView, cellForRowAt _: IndexPath) -> UITableViewCell {
         return tableView.dequeueReusableCell(withIdentifier: cellType.reusableId)!
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+
+    func tableView(_: UITableView, didSelectRowAt _: IndexPath) {
     }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+    func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
 }

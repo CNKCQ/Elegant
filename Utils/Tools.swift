@@ -5,7 +5,7 @@
 import Foundation
 
 // swap two elements'values
-func swap<E>( a: inout E, b: inout E) {
+func swap<E>(a: inout E, b: inout E) {
     let temp = a
     b = a
     a = temp
@@ -27,5 +27,4 @@ func digitParse() {
 }
 
 extension Array {
-    
 }

@@ -11,14 +11,13 @@ import UIKit
 class ScrollViewController: BaseViewController {
     var items: [Item] = [] {
         didSet {
-           reloadData()
+            reloadData()
         }
     }
-    
+
     override func viewDidLoad() {
-        
     }
-    
+
     func reloadData() {
     }
 }

@@ -14,13 +14,13 @@ class TestCell: TableViewCell {
         $0.frame = CGRect(x: 5, y: 5, width: 200, height: 40)
         return $0
     }(UILabel())
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+
+    override init(style _: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: .subtitle, reuseIdentifier: reuseIdentifier)
         addSubview(nameLabel)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
+
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

@@ -80,6 +80,7 @@
 		AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B701ED2EAC300779214 /* UITableView+.swift */; };
 		AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B721ED2ECFC00779214 /* UIView+.swift */; };
 		AAD96B751ED2F4F900779214 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */; };
+		AAD96B771ED3093F00779214 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B761ED3093F00779214 /* UIImage+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -176,6 +177,7 @@
 		AAD96B701ED2EAC300779214 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		AAD96B721ED2ECFC00779214 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
+		AAD96B761ED3093F00779214 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -463,6 +465,7 @@
 				AAD96B701ED2EAC300779214 /* UITableView+.swift */,
 				AAD96B721ED2ECFC00779214 /* UIView+.swift */,
 				AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */,
+				AAD96B761ED3093F00779214 /* UIImage+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -672,6 +675,7 @@
 				3C3410C11DB0C93600E60A62 /* GCD.swift in Sources */,
 				3CEF47491DAB8126002E63EF /* BaseDelegate.swift in Sources */,
 				AA5094A21ECD919B002DC62E /* URL+.swift in Sources */,
+				AAD96B771ED3093F00779214 /* UIImage+.swift in Sources */,
 				AA50949E1ECD90C0002DC62E /* String+.swift in Sources */,
 				AA50949A1ECD8FAA002DC62E /* Dictionary+.swift in Sources */,
 				3CBF04F51DF1248200F9A289 /* main.swift in Sources */,

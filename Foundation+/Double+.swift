@@ -18,5 +18,4 @@ public extension Double {
     var abs: Double {
         return self > 0 ? self : -self
     }
-
 }

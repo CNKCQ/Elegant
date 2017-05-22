@@ -13,7 +13,7 @@ class FileTool: NSObject {
 
         if fileManager.fileExists(atPath: path) {
             var dict = try? fileManager.attributesOfItem(atPath: path)
-            if let fileSize = dict![FileAttributeKey.size] as? Int{
+            if let fileSize = dict![FileAttributeKey.size] as? Int {
                 return Double(fileSize) / 1024.0 / 1024.0
             }
         }
@@ -37,17 +37,16 @@ class FileTool: NSObject {
     }
 
     /// 清除文件 同步
-    class func cleanFolder(path: String, complete:() -> ()) {
+    class func cleanFolder(path: String, complete: () -> Void) {
 
-        let chilerFiles = self.fileManager.subpaths(atPath: path)
+        let chilerFiles = fileManager.subpaths(atPath: path)
         for fileName in chilerFiles! {
             let tmpPath = path as NSString
             let fileFullPathName = tmpPath.appendingPathComponent(fileName)
-            if self.fileManager.fileExists(atPath: fileFullPathName) {
+            if fileManager.fileExists(atPath: fileFullPathName) {
                 do {
-                    try self.fileManager.removeItem(atPath: fileFullPathName)
+                    try fileManager.removeItem(atPath: fileFullPathName)
                 } catch _ {
-
                 }
             }
         }
@@ -56,8 +55,8 @@ class FileTool: NSObject {
     }
 
     /// 清除文件 异步
-    class func cleanFolderAsync(path: String, complete:@escaping () -> ()) {
-        
+    class func cleanFolderAsync(path: String, complete: @escaping () -> Void) {
+
         let queue = DispatchQueue(label: "cleanQueue")
         queue.async {
             let chilerFiles = self.fileManager.subpaths(atPath: path)
@@ -75,4 +74,3 @@ class FileTool: NSObject {
         }
     }
 }
- 

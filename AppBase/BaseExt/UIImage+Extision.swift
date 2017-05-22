@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 extension UIImage {
     /* 缩放 */
     public func resize(size: CGSize) -> UIImage {
@@ -18,9 +17,8 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image!
     }
-    
+
     public func zooming(scale: CGFloat) -> UIImage {
         return resize(size: CGSize(width: size.width * scale, height: size.height * scale))
     }
-    
 }

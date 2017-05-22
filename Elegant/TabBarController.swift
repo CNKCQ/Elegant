@@ -14,7 +14,7 @@ class TabBarController: BaseTabBarController {
         _ = UITableViewController()
     }
 
-    override func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+    override func tabBarController(_: UITabBarController, shouldSelect _: UIViewController) -> Bool {
         return true
     }
 }
