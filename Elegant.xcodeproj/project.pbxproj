@@ -79,6 +79,7 @@
 		AAD96B6F1ED2E81A00779214 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6E1ED2E81A00779214 /* UIFont+.swift */; };
 		AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B701ED2EAC300779214 /* UITableView+.swift */; };
 		AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B721ED2ECFC00779214 /* UIView+.swift */; };
+		AAD96B751ED2F4F900779214 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -174,6 +175,7 @@
 		AAD96B6E1ED2E81A00779214 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		AAD96B701ED2EAC300779214 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		AAD96B721ED2ECFC00779214 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -460,6 +462,7 @@
 				AAD96B6E1ED2E81A00779214 /* UIFont+.swift */,
 				AAD96B701ED2EAC300779214 /* UITableView+.swift */,
 				AAD96B721ED2ECFC00779214 /* UIView+.swift */,
+				AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -664,6 +667,7 @@
 				3C383ECE1DAE2E2D00A8EACC /* TableListController.swift in Sources */,
 				AA50949C1ECD9062002DC62E /* Set+.swift in Sources */,
 				3CEF48081DAD12BB002E63EF /* UITableView+Reusable.swift in Sources */,
+				AAD96B751ED2F4F900779214 /* UITableViewCell+.swift in Sources */,
 				3CEF48061DAD12BB002E63EF /* Reusable.swift in Sources */,
 				3C3410C11DB0C93600E60A62 /* GCD.swift in Sources */,
 				3CEF47491DAB8126002E63EF /* BaseDelegate.swift in Sources */,

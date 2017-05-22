@@ -32,6 +32,7 @@ public extension Array {
     ///
     /// - Parameter transform: condition
     /// - Returns: the result of the condition
+    @discardableResult
     func every(transform: (Element) -> Bool) -> Bool {
         for e in self {
             while !transform(e) {
@@ -45,6 +46,7 @@ public extension Array {
     ///
     /// - Parameter element: the static Value
     /// - Returns: array
+    @discardableResult
     func fill(element: Element) -> Array {
         let count = self.count
         return Array(repeating: element, count: count)
@@ -67,6 +69,7 @@ public extension Array {
     ///
     /// - Parameter elements: The elements to add to the end of the array.
     /// - Returns: The new length property of the object upon which the method was called.
+    @discardableResult
     mutating func push(_ elements: Element...) -> Array {
         return self + elements
     }
@@ -75,6 +78,7 @@ public extension Array {
     /// The entries() method returns a new Array Iterator object that contains the key/value pairs for each index in the array.
     ///
     /// - Returns: A new Array iterator object.
+    @discardableResult
     func entries() -> [(Int, Element)] {
         var temp: [(Int, Element)]  = []
         for idx in 0..<self.count {
@@ -89,6 +93,7 @@ public extension Array {
     ///
     /// - Parameter elements: Arrays and/or values to concatenate into a new array. See the description below for details
     /// - Returns: A new Array instance.
+    @discardableResult
     mutating func concat(_ elements: [Element]) -> [Element] {
         return self + elements
     }
@@ -136,6 +141,7 @@ public extension Array where Element: Equatable {
     ///
     /// - Parameter element: a given element
     /// - Returns: The index of the element at the array
+    @discardableResult
     func index(of element: Element) -> Int {
         return index(of: element) ?? -1
     }
@@ -144,7 +150,7 @@ public extension Array where Element: Equatable {
     /// Remove first collection element that is equal to the given `object`:
     ///
     /// - Parameter object: The element will remove form the array
-    public mutating func remove(_ object: Element) {
+    mutating func remove(_ object: Element) {
         remove(at: index(of: object))
     }
 }

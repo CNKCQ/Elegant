@@ -22,12 +22,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let dic = ["1": "one", "3": "three", "2": "two", "4": "four", "5": "five", "6": "six"]
         print("🌹", dic.entries(), "🌹")
+        self.array()
         
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        let rootController = ViewController()
 //        window?.rootViewController = rootController
 //        window?.makeKeyAndVisible()
         return true
+    }
+
+    @discardableResult
+    func array() -> [String] {
+        return ["", ""]
     }
 
 }

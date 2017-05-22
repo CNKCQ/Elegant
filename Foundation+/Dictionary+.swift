@@ -38,6 +38,7 @@ extension Dictionary {
     /// The entries() method returns a new Iterator object that contains the [key, value] pairs for each element in the Dictionary object in insertion order.
     ///
     /// - Returns: A new dictionary iterator object.
+    @discardableResult
     func entries() -> [(Dictionary.Key, Dictionary.Value)] {
         return self.flatMap({($0.key, $0.value)})
     }
@@ -46,6 +47,7 @@ extension Dictionary {
     ///
     /// - Parameter key: Required. The key of the element to test for presence in the Dictionary object.
     /// - Returns: Returns true if an element with the specified key exists in the Dictionary object; otherwise false.
+    @discardableResult
     func has(_ key: Dictionary.Key) -> Bool {
         return self.keys.contains(key)
     }
