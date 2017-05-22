@@ -1,13 +1,19 @@
 //
-//  UIView+FrameLayout.swift
-//  Swiftk
+//  UIView+.swift
+//  Elegant
 //
-//  Created by Jack on 16/4/16.
-//  Copyright © 2016年 Jack. All rights reserved.
+//  Created by Steve on 2017/5/22.
+//  Copyright © 2017年 KingCQ. All rights reserved.
 //
 
 import UIKit
 
+extension UIView {
+    
+}
+
+
+// MARK: - Syntactic sugar for the frame
 extension UIView {
     var width: CGFloat {
         get { return self.frame.size.width }
@@ -46,7 +52,7 @@ extension UIView {
     }
 
     var x: CGFloat {
-        get { return self.frame.midX }
+        get { return self.frame.minX }
         set {
             var frame = self.frame
             frame.origin.x = newValue
@@ -77,7 +83,7 @@ extension UIView {
     }
 
     var top: CGFloat {
-        get { return self.frame.minY }
+        get { return self.y }
         set {
             var frame = self.frame
             frame.origin.y = newValue
@@ -89,7 +95,7 @@ extension UIView {
         get { return self.frame.maxY}
         set {
             var frame = self.frame
-            frame.origin.y = newValue - self.frame.size.height
+            frame.origin.y = newValue - self.height
             self.frame = frame
         }
     }
@@ -104,7 +110,7 @@ extension UIView {
     }
 
     var left: CGFloat {
-        get { return self.frame.midX }
+        get { return self.x }
         set {
             var frame = self.frame
             frame.origin.x  = newValue

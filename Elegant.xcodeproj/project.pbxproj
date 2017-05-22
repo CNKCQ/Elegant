@@ -46,7 +46,6 @@
 		3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47301DAB8126002E63EF /* TableViewController.swift */; };
 		3CEF47601DAB8126002E63EF /* String+CacheMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */; };
 		3CEF47621DAB8127002E63EF /* UIImageView+Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */; };
-		3CEF47631DAB8127002E63EF /* UIView+FrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */; };
 		3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47461DAB8126002E63EF /* FileTool.swift */; };
 		3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47661DAB8136002E63EF /* TabBarController.swift */; };
 		3CEF476A1DAB8136002E63EF /* TableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47671DAB8136002E63EF /* TableController.swift */; };
@@ -79,6 +78,7 @@
 		AAD96B6D1ED2E3B600779214 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */; };
 		AAD96B6F1ED2E81A00779214 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6E1ED2E81A00779214 /* UIFont+.swift */; };
 		AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B701ED2EAC300779214 /* UITableView+.swift */; };
+		AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B721ED2ECFC00779214 /* UIView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -140,7 +140,6 @@
 		3CEF47301DAB8126002E63EF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CacheMenu.swift"; sourceTree = "<group>"; };
 		3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Web.swift"; sourceTree = "<group>"; };
-		3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FrameLayout.swift"; sourceTree = "<group>"; };
 		3CEF47461DAB8126002E63EF /* FileTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTool.swift; sourceTree = "<group>"; };
 		3CEF47661DAB8136002E63EF /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		3CEF47671DAB8136002E63EF /* TableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableController.swift; sourceTree = "<group>"; };
@@ -174,6 +173,7 @@
 		AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		AAD96B6E1ED2E81A00779214 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		AAD96B701ED2EAC300779214 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
+		AAD96B721ED2ECFC00779214 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -366,7 +366,6 @@
 			children = (
 				3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */,
 				3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */,
-				3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */,
 				3CEF47451DAB8126002E63EF /* Utils */,
 				3C3410C01DB0C93600E60A62 /* GCD.swift */,
 			);
@@ -460,6 +459,7 @@
 				AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */,
 				AAD96B6E1ED2E81A00779214 /* UIFont+.swift */,
 				AAD96B701ED2EAC300779214 /* UITableView+.swift */,
+				AAD96B721ED2ECFC00779214 /* UIView+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -607,7 +607,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CEF47631DAB8127002E63EF /* UIView+FrameLayout.swift in Sources */,
 				3CEF47551DAB8126002E63EF /* BaseTabBarController.swift in Sources */,
 				3C383ED61DAE306D00A8EACC /* CollectionViewCell.swift in Sources */,
 				3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */,
@@ -637,6 +636,7 @@
 				3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */,
 				AA5094A61ECD922E002DC62E /* Date+.swift in Sources */,
 				3CEF48141DAD2910002E63EF /* TableViewCell.swift in Sources */,
+				AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */,
 				AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */,
 				3CBF04F31DF11D1D00F9A289 /* MyTableController.swift in Sources */,
 				3CEF48121DAD2180002E63EF /* Ad.swift in Sources */,
