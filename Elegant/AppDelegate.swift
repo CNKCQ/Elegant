@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let arr = [1, 3, 3, 4]
-        print("🌹", arr.toString, "🌹")
+//        let arr = ["1", "3", "2", "4", "5", "6"]
+//        print("🌹", arr.random, "🌹", arr.shuffled)
+
+        let dic = ["1": "one", "3": "three", "2": "two", "4": "four", "5": "five", "6": "six"]
+        print("🌹", dic.entries(), "🌹")
         
 //        window = UIWindow(frame: UIScreen.main.bounds)
 //        let rootController = ViewController()

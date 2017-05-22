@@ -248,7 +248,8 @@
 		3CEF47011DAB808E002E63EF = {
 			isa = PBXGroup;
 			children = (
-				AA5094961ECD8F25002DC62E /* EleFoundation */,
+				AAD96B651ED2CBB000779214 /* UI+ */,
+				AA5094961ECD8F25002DC62E /* Foundation+ */,
 				3CEE37651E272509003DE0BC /* iOSKit */,
 				3C5EF7C71DB9CA7F00E38374 /* Third */,
 				3C3410AB1DB084DA00E60A62 /* ListKit */,
@@ -425,7 +426,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		AA5094961ECD8F25002DC62E /* EleFoundation */ = {
+		AA5094961ECD8F25002DC62E /* Foundation+ */ = {
 			isa = PBXGroup;
 			children = (
 				AA5094971ECD8F71002DC62E /* Array+.swift */,
@@ -441,7 +442,14 @@
 				AA5094AB1ECDDE95002DC62E /* Double+.swift */,
 				AA5094AD1ECDDECB002DC62E /* Float+.swift */,
 			);
-			path = EleFoundation;
+			path = "Foundation+";
+			sourceTree = "<group>";
+		};
+		AAD96B651ED2CBB000779214 /* UI+ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI+";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -135,8 +135,16 @@ public extension Array where Element: Equatable {
     /// The index method returns the first index at which a given element can be found in the array, or -1 if it is not present.
     ///
     /// - Parameter element: a given element
-    /// - Returns: What the index of the element at the array
+    /// - Returns: The index of the element at the array
     func index(of element: Element) -> Int {
         return index(of: element) ?? -1
+    }
+
+
+    /// Remove first collection element that is equal to the given `object`:
+    ///
+    /// - Parameter object: The element will remove form the array
+    public mutating func remove(_ object: Element) {
+        remove(at: index(of: object))
     }
 }
