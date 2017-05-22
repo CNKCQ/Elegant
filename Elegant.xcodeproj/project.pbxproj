@@ -77,6 +77,7 @@
 		AAD96B671ED2CC9C00779214 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B661ED2CC9C00779214 /* UIColor+.swift */; };
 		AAD96B6B1ED2DB8A00779214 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */; };
 		AAD96B6D1ED2E3B600779214 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */; };
+		AAD96B6F1ED2E81A00779214 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6E1ED2E81A00779214 /* UIFont+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -170,6 +171,7 @@
 		AAD96B661ED2CC9C00779214 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		AAD96B6E1ED2E81A00779214 /* UIFont+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -454,6 +456,7 @@
 			children = (
 				AAD96B661ED2CC9C00779214 /* UIColor+.swift */,
 				AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */,
+				AAD96B6E1ED2E81A00779214 /* UIFont+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -609,6 +612,7 @@
 				3C3410AD1DB0851700E60A62 /* ListSectionController.swift in Sources */,
 				3C3410B71DB0884000E60A62 /* ListSupplementaryViewSource.swift in Sources */,
 				AA5094A01ECD90F7002DC62E /* Number+.swift in Sources */,
+				AAD96B6F1ED2E81A00779214 /* UIFont+.swift in Sources */,
 				3CEF48041DAD12BB002E63EF /* NibLoadable.swift in Sources */,
 				AAD96B6B1ED2DB8A00779214 /* CGFloat+.swift in Sources */,
 				3CBA4DD91DDDA380007FDEB0 /* UIImage+Extision.swift in Sources */,
