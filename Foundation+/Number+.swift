@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension NSNumber {
+public extension NSNumber {
 
 }

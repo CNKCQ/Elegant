@@ -45,7 +45,6 @@
 		3CEF47551DAB8126002E63EF /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF472F1DAB8126002E63EF /* BaseTabBarController.swift */; };
 		3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47301DAB8126002E63EF /* TableViewController.swift */; };
 		3CEF47601DAB8126002E63EF /* String+CacheMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */; };
-		3CEF47611DAB8127002E63EF /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47421DAB8126002E63EF /* UIColor+RandomColor.swift */; };
 		3CEF47621DAB8127002E63EF /* UIImageView+Web.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */; };
 		3CEF47631DAB8127002E63EF /* UIView+FrameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */; };
 		3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF47461DAB8126002E63EF /* FileTool.swift */; };
@@ -75,6 +74,9 @@
 		AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094A91ECDDDAA002DC62E /* Int+.swift */; };
 		AA5094AC1ECDDE95002DC62E /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094AB1ECDDE95002DC62E /* Double+.swift */; };
 		AA5094AE1ECDDECB002DC62E /* Float+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5094AD1ECDDECB002DC62E /* Float+.swift */; };
+		AAD96B671ED2CC9C00779214 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B661ED2CC9C00779214 /* UIColor+.swift */; };
+		AAD96B6B1ED2DB8A00779214 /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */; };
+		AAD96B6D1ED2E3B600779214 /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,7 +137,6 @@
 		3CEF472F1DAB8126002E63EF /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		3CEF47301DAB8126002E63EF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+CacheMenu.swift"; sourceTree = "<group>"; };
-		3CEF47421DAB8126002E63EF /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
 		3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Web.swift"; sourceTree = "<group>"; };
 		3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+FrameLayout.swift"; sourceTree = "<group>"; };
 		3CEF47461DAB8126002E63EF /* FileTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileTool.swift; sourceTree = "<group>"; };
@@ -166,6 +167,9 @@
 		AA5094A91ECDDDAA002DC62E /* Int+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		AA5094AB1ECDDE95002DC62E /* Double+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		AA5094AD1ECDDECB002DC62E /* Float+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
+		AAD96B661ED2CC9C00779214 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
+		AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,7 +361,6 @@
 			isa = PBXGroup;
 			children = (
 				3CEF47401DAB8126002E63EF /* String+CacheMenu.swift */,
-				3CEF47421DAB8126002E63EF /* UIColor+RandomColor.swift */,
 				3CEF47431DAB8126002E63EF /* UIImageView+Web.swift */,
 				3CEF47441DAB8126002E63EF /* UIView+FrameLayout.swift */,
 				3CEF47451DAB8126002E63EF /* Utils */,
@@ -441,6 +444,7 @@
 				AA5094A91ECDDDAA002DC62E /* Int+.swift */,
 				AA5094AB1ECDDE95002DC62E /* Double+.swift */,
 				AA5094AD1ECDDECB002DC62E /* Float+.swift */,
+				AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */,
 			);
 			path = "Foundation+";
 			sourceTree = "<group>";
@@ -448,6 +452,8 @@
 		AAD96B651ED2CBB000779214 /* UI+ */ = {
 			isa = PBXGroup;
 			children = (
+				AAD96B661ED2CC9C00779214 /* UIColor+.swift */,
+				AAD96B6A1ED2DB8A00779214 /* CGFloat+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -604,6 +610,7 @@
 				3C3410B71DB0884000E60A62 /* ListSupplementaryViewSource.swift in Sources */,
 				AA5094A01ECD90F7002DC62E /* Number+.swift in Sources */,
 				3CEF48041DAD12BB002E63EF /* NibLoadable.swift in Sources */,
+				AAD96B6B1ED2DB8A00779214 /* CGFloat+.swift in Sources */,
 				3CBA4DD91DDDA380007FDEB0 /* UIImage+Extision.swift in Sources */,
 				3CBF04F11DF11CBE00F9A289 /* ViewController.swift in Sources */,
 				3CEF47621DAB8127002E63EF /* UIImageView+Web.swift in Sources */,
@@ -625,19 +632,20 @@
 				3CEF48141DAD2910002E63EF /* TableViewCell.swift in Sources */,
 				AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */,
 				3CBF04F31DF11D1D00F9A289 /* MyTableController.swift in Sources */,
-				3CEF47611DAB8127002E63EF /* UIColor+RandomColor.swift in Sources */,
 				3CEF48121DAD2180002E63EF /* Ad.swift in Sources */,
 				3C20F6981DF2FBE100D6C5BA /* DiscoverController.swift in Sources */,
 				3CEF47541DAB8126002E63EF /* BaseNavigationController.swift in Sources */,
 				AA5094A41ECD920B002DC62E /* Bundle+.swift in Sources */,
 				AA5094981ECD8F71002DC62E /* Array+.swift in Sources */,
 				3CEF47511DAB8126002E63EF /* UIView+Extension.swift in Sources */,
+				AAD96B6D1ED2E3B600779214 /* UserDefaults+.swift in Sources */,
 				3C383ED41DAE2FE800A8EACC /* CollectionListController.swift in Sources */,
 				3CEF48071DAD12BB002E63EF /* UICollectionView+Reusable.swift in Sources */,
 				3C3410B31DB085B800E60A62 /* ListDisplayDelegate.swift in Sources */,
 				3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */,
 				AA5094A81ECD92A0002DC62E /* Locale+.swift in Sources */,
 				3C383ED01DAE2E5E00A8EACC /* TableGroupController.swift in Sources */,
+				AAD96B671ED2CC9C00779214 /* UIColor+.swift in Sources */,
 				3CEF47601DAB8126002E63EF /* String+CacheMenu.swift in Sources */,
 				AA5094951ECD89D0002DC62E /* README.md in Sources */,
 				3C383ED21DAE2F5D00A8EACC /* CollectionViewController.swift in Sources */,

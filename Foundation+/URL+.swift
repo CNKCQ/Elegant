@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
 
 }

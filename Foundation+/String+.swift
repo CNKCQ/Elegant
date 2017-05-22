@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
 
     /// The string length property returns the count of character in the string.
     var length: Int {

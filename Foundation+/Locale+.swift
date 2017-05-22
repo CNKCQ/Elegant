@@ -8,6 +8,6 @@
 
 import Foundation
 
-extension Locale {
+public extension Locale {
     
 }

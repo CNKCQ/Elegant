@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Bundle {
+public extension Bundle {
 
     /// The releaseVersion
     static var releaseVersion: String {
