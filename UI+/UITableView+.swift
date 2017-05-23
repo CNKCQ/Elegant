@@ -16,4 +16,9 @@ extension UITableView {
     public func deselectAll(animated: Bool) {
         _ = indexPathsForSelectedRows?.map { deselectRow(at: $0, animated: animated) }
     }
+
+    /// Hide the bottom line of the tableView
+    public func hideTailLine() {
+        tableFooterView = UIView()
+    }
 }

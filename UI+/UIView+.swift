@@ -13,6 +13,7 @@ extension UIView {
 
 // MARK: - Syntactic sugar for the frame
 extension UIView {
+
     var width: CGFloat {
         get { return frame.size.width }
         set {

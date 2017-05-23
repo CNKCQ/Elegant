@@ -33,27 +33,33 @@ public extension String {
 
 extension String {
 
+    /// Accesses the element at the specified position. Support "abc"[-1] == "c"
+    ///
+    /// - Parameter index: The position of the element to access.
     subscript(index: Int) -> Character {
-        var i = index
-        if i < 0 { // 支持 "abc"[-1] == "c" 这样的用法
-            i = length - abs(index)
-        }
-        return self[self.index(startIndex, offsetBy: i)]
+        let idx = index < 0 ? (length - abs(index)) : index
+        return self[self.index(startIndex, offsetBy: idx)]
     }
 
-    public subscript(range: Range<Int>) -> String {
+    /// Accesses a contiguous subrange of the string's characters.
+    ///
+    /// - Parameter range: A range of integers.
+    subscript(range: Range<Int>) -> String {
         return substring(with: index(startIndex, offsetBy: range.lowerBound) ..< index(startIndex, offsetBy: range.upperBound))
     }
 
-    public func stringByInsert(string: String) -> String? {
-        let regex = try? NSRegularExpression(pattern: "\\w", options: [])
-        return regex?.stringByReplacingMatches(in: self, options: [], range: NSRange(location: 0, length: length), withTemplate: "$0\(string)").trimmed(set: .whitespacesAndNewlines)
-    }
-
+    /// Returns a new string made by removing from both ends of the String characters contained in a given character set.
+    ///
+    /// - Parameter set: Character set, default is .whitespaces.
+    /// - Returns: A new string
     public func trimmed(set: CharacterSet = .whitespaces) -> String {
         return trimmingCharacters(in: set)
     }
 
+    /// Returns a new camelCaseString
+    ///
+    /// - Parameter separator: A specail character
+    /// - Returns: camelCaseString
     public func camelCaseString(separator: String = "_") -> String {
         if isEmpty {
             return self

@@ -81,6 +81,15 @@
 		AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B721ED2ECFC00779214 /* UIView+.swift */; };
 		AAD96B751ED2F4F900779214 /* UITableViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */; };
 		AAD96B771ED3093F00779214 /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B761ED3093F00779214 /* UIImage+.swift */; };
+		AAD96B791ED30D6B00779214 /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B781ED30D6B00779214 /* UIDevice+.swift */; };
+		AAD96B7B1ED30D9200779214 /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B7A1ED30D9200779214 /* UIImageView+.swift */; };
+		AAD96B7D1ED30DAD00779214 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B7C1ED30DAD00779214 /* UIButton+.swift */; };
+		AAD96B7F1ED30DC500779214 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B7E1ED30DC500779214 /* UILabel+.swift */; };
+		AAD96B811ED30DF200779214 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B801ED30DF200779214 /* UIViewController+.swift */; };
+		AAD96B831ED30E3300779214 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B821ED30E3300779214 /* UINavigationController+.swift */; };
+		AAD96B851ED30E5300779214 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B841ED30E5300779214 /* UIWindow+.swift */; };
+		AAD96B871ED30E7E00779214 /* UITabBarController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B861ED30E7E00779214 /* UITabBarController+.swift */; };
+		AAD96B8A1ED3D5BA00779214 /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B891ED3D5BA00779214 /* Calendar+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -178,6 +187,16 @@
 		AAD96B721ED2ECFC00779214 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+.swift"; sourceTree = "<group>"; };
 		AAD96B761ED3093F00779214 /* UIImage+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		AAD96B781ED30D6B00779214 /* UIDevice+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
+		AAD96B7A1ED30D9200779214 /* UIImageView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
+		AAD96B7C1ED30DAD00779214 /* UIButton+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		AAD96B7E1ED30DC500779214 /* UILabel+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		AAD96B801ED30DF200779214 /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		AAD96B821ED30E3300779214 /* UINavigationController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
+		AAD96B841ED30E5300779214 /* UIWindow+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
+		AAD96B861ED30E7E00779214 /* UITabBarController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+.swift"; sourceTree = "<group>"; };
+		AAD96B891ED3D5BA00779214 /* Calendar+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
+		AAD96B8B1ED3E34000779214 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +314,7 @@
 				3CEF47111DAB808E002E63EF /* Main.storyboard */,
 				3CEF47141DAB808E002E63EF /* Assets.xcassets */,
 				3CEF47161DAB808E002E63EF /* LaunchScreen.storyboard */,
+				AAD96B8B1ED3E34000779214 /* Test.playground */,
 				3CEF47191DAB808E002E63EF /* Info.plist */,
 				3CEF48111DAD2180002E63EF /* Ad.swift */,
 				3C3410C21DB0D3D100E60A62 /* Expandable.swift */,
@@ -452,6 +472,7 @@
 				AA5094AB1ECDDE95002DC62E /* Double+.swift */,
 				AA5094AD1ECDDECB002DC62E /* Float+.swift */,
 				AAD96B6C1ED2E3B600779214 /* UserDefaults+.swift */,
+				AAD96B891ED3D5BA00779214 /* Calendar+.swift */,
 			);
 			path = "Foundation+";
 			sourceTree = "<group>";
@@ -466,6 +487,14 @@
 				AAD96B721ED2ECFC00779214 /* UIView+.swift */,
 				AAD96B741ED2F4F900779214 /* UITableViewCell+.swift */,
 				AAD96B761ED3093F00779214 /* UIImage+.swift */,
+				AAD96B781ED30D6B00779214 /* UIDevice+.swift */,
+				AAD96B7A1ED30D9200779214 /* UIImageView+.swift */,
+				AAD96B7C1ED30DAD00779214 /* UIButton+.swift */,
+				AAD96B7E1ED30DC500779214 /* UILabel+.swift */,
+				AAD96B801ED30DF200779214 /* UIViewController+.swift */,
+				AAD96B821ED30E3300779214 /* UINavigationController+.swift */,
+				AAD96B841ED30E5300779214 /* UIWindow+.swift */,
+				AAD96B861ED30E7E00779214 /* UITabBarController+.swift */,
 			);
 			path = "UI+";
 			sourceTree = "<group>";
@@ -614,6 +643,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CEF47551DAB8126002E63EF /* BaseTabBarController.swift in Sources */,
+				AAD96B7F1ED30DC500779214 /* UILabel+.swift in Sources */,
 				3C383ED61DAE306D00A8EACC /* CollectionViewCell.swift in Sources */,
 				3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */,
 				3C383ECA1DAE2A4B00A8EACC /* ScrollViewController.swift in Sources */,
@@ -642,6 +672,7 @@
 				3CEF47641DAB8127002E63EF /* FileTool.swift in Sources */,
 				AA5094A61ECD922E002DC62E /* Date+.swift in Sources */,
 				3CEF48141DAD2910002E63EF /* TableViewCell.swift in Sources */,
+				AAD96B7D1ED30DAD00779214 /* UIButton+.swift in Sources */,
 				AAD96B731ED2ECFC00779214 /* UIView+.swift in Sources */,
 				AA5094AA1ECDDDAA002DC62E /* Int+.swift in Sources */,
 				3CBF04F31DF11D1D00F9A289 /* MyTableController.swift in Sources */,
@@ -649,6 +680,8 @@
 				AAD96B711ED2EAC300779214 /* UITableView+.swift in Sources */,
 				3C20F6981DF2FBE100D6C5BA /* DiscoverController.swift in Sources */,
 				3CEF47541DAB8126002E63EF /* BaseNavigationController.swift in Sources */,
+				AAD96B831ED30E3300779214 /* UINavigationController+.swift in Sources */,
+				AAD96B811ED30DF200779214 /* UIViewController+.swift in Sources */,
 				AA5094A41ECD920B002DC62E /* Bundle+.swift in Sources */,
 				AA5094981ECD8F71002DC62E /* Array+.swift in Sources */,
 				3CEF47511DAB8126002E63EF /* UIView+Extension.swift in Sources */,
@@ -656,15 +689,19 @@
 				3C383ED41DAE2FE800A8EACC /* CollectionListController.swift in Sources */,
 				3CEF48071DAD12BB002E63EF /* UICollectionView+Reusable.swift in Sources */,
 				3C3410B31DB085B800E60A62 /* ListDisplayDelegate.swift in Sources */,
+				AAD96B871ED30E7E00779214 /* UITabBarController+.swift in Sources */,
 				3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */,
 				AA5094A81ECD92A0002DC62E /* Locale+.swift in Sources */,
+				AAD96B7B1ED30D9200779214 /* UIImageView+.swift in Sources */,
 				3C383ED01DAE2E5E00A8EACC /* TableGroupController.swift in Sources */,
 				AAD96B671ED2CC9C00779214 /* UIColor+.swift in Sources */,
+				AAD96B791ED30D6B00779214 /* UIDevice+.swift in Sources */,
 				3CEF47601DAB8126002E63EF /* String+CacheMenu.swift in Sources */,
 				AA5094951ECD89D0002DC62E /* README.md in Sources */,
 				3C383ED21DAE2F5D00A8EACC /* CollectionViewController.swift in Sources */,
 				3CEF48051DAD12BB002E63EF /* NibOwnerLoadable.swift in Sources */,
 				3CEF48171DADCD37002E63EF /* Tools.swift in Sources */,
+				AAD96B8A1ED3D5BA00779214 /* Calendar+.swift in Sources */,
 				3CEF48101DAD1EC0002E63EF /* Adable.swift in Sources */,
 				AA5094AC1ECDDE95002DC62E /* Double+.swift in Sources */,
 				3C383ECE1DAE2E2D00A8EACC /* TableListController.swift in Sources */,
@@ -672,6 +709,7 @@
 				3CEF48081DAD12BB002E63EF /* UITableView+Reusable.swift in Sources */,
 				AAD96B751ED2F4F900779214 /* UITableViewCell+.swift in Sources */,
 				3CEF48061DAD12BB002E63EF /* Reusable.swift in Sources */,
+				AAD96B851ED30E5300779214 /* UIWindow+.swift in Sources */,
 				3C3410C11DB0C93600E60A62 /* GCD.swift in Sources */,
 				3CEF47491DAB8126002E63EF /* BaseDelegate.swift in Sources */,
 				AA5094A21ECD919B002DC62E /* URL+.swift in Sources */,

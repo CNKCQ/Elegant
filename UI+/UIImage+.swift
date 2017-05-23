@@ -15,6 +15,10 @@ extension UIImage {
         return UIImageJPEGRepresentation(self, 1.0)?.base64EncodedString()
     }
 
+    /// Image are created with tintColor.
+    /// - Parameter tintColor: UIColor
+    /// - Returns: A new image
+    @discardableResult
     func with(_ tintColor: UIColor) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(size, false, scale)
         let context = UIGraphicsGetCurrentContext()

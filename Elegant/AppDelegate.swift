@@ -20,9 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        print("🌹", arr.random, "🌹", arr.shuffled)
 
         let dic = ["1": "one", "3": "three", "2": "two", "4": "four", "5": "five", "6": "six"]
-        print("🌹", dic.entries(), "🌹")
-        array()
 
+        let str = "Hello_World"
+        print("🌹", str.camelCaseString(), "🌹")
+        array()
         //        window = UIWindow(frame: UIScreen.main.bounds)
         //        let rootController = ViewController()
         //        window?.rootViewController = rootController

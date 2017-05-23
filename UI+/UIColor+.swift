@@ -56,7 +56,6 @@ public extension UIColor {
         return UIColor(0xFF2D55)
     }
 
-    // TODO:
     /// init method with hex Int and alpha(default: 1)
     ///
     /// - Parameters:
