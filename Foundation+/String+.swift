@@ -53,7 +53,6 @@ public extension String {
     var decoding: String? {
         return removingPercentEncoding
     }
-
 }
 
 extension String {

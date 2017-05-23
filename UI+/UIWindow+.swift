@@ -42,5 +42,4 @@ extension UIWindow {
         }
         return visibleController
     }
-
 }
