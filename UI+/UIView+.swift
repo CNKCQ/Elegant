@@ -9,6 +9,18 @@
 import UIKit
 
 extension UIView {
+
+    /// Returns an image of the current view
+    ///
+    /// - Parameter scale: scale
+    /// - Returns: A new image
+    public func getSnapshot(scale: CGFloat = 0) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(bounds.size, false, scale)
+        drawHierarchy(in: bounds, afterScreenUpdates: true)
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return image
+    }
 }
 
 // MARK: - Syntactic sugar for the frame
