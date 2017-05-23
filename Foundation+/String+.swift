@@ -10,6 +10,18 @@ import Foundation
 
 public extension String {
 
+    /// Returns floatValue
+    var float: Float? {
+        let numberFormatter = NumberFormatter()
+        return numberFormatter.number(from: self)?.floatValue
+    }
+
+    /// Returns doubleValue
+    var double: Double? {
+        let numberFormatter = NumberFormatter()
+        return numberFormatter.number(from: self)?.doubleValue
+    }
+
     /// The string length property returns the count of character in the string.
     var length: Int {
         return characters.count
@@ -29,6 +41,19 @@ public extension String {
     var uppercased: String {
         return uppercased()
     }
+
+    /// Returns a new string made from the receiver by replacing all characters not in the unreservedCharset with percent-encoded characters.
+    var encoding: String? {
+        let unreservedChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-._~"
+        let unreservedCharset = CharacterSet(charactersIn: unreservedChars)
+        return addingPercentEncoding(withAllowedCharacters: unreservedCharset)
+    }
+
+    /// Returns a new string made from the receiver by replacing all percent encoded sequences with the matching UTF-8 characters.
+    var decoding: String? {
+        return removingPercentEncoding
+    }
+
 }
 
 extension String {
