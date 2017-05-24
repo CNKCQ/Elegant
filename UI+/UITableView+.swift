@@ -14,7 +14,9 @@ extension UITableView {
     ///
     /// - Parameter animated: Animation
     public func deselectAll(animated: Bool) {
-        _ = indexPathsForSelectedRows?.map { deselectRow(at: $0, animated: animated) }
+        _ = indexPathsForSelectedRows?.map {
+            deselectRow(at: $0, animated: animated)
+        }
     }
 
     /// Hide the bottom line of the tableView
@@ -24,6 +26,8 @@ extension UITableView {
 
     /// Returns the items of the tableView
     public var numberOfItems: Int {
-        return (0 ..< numberOfSections).reduce(0) { $0 + numberOfRows(inSection: $1) }
+        return (0 ..< numberOfSections).reduce(0) {
+            $0 + numberOfRows(inSection: $1)
+        }
     }
 }
