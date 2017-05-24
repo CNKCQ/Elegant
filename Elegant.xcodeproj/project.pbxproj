@@ -83,7 +83,6 @@
 		AAD96B811ED30DF200779214 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B801ED30DF200779214 /* UIViewController+.swift */; };
 		AAD96B831ED30E3300779214 /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B821ED30E3300779214 /* UINavigationController+.swift */; };
 		AAD96B851ED30E5300779214 /* UIWindow+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B841ED30E5300779214 /* UIWindow+.swift */; };
-		AAD96B871ED30E7E00779214 /* UITabBarController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B861ED30E7E00779214 /* UITabBarController+.swift */; };
 		AAD96B8A1ED3D5BA00779214 /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96B891ED3D5BA00779214 /* Calendar+.swift */; };
 		AAD96BA51ED53CDD00779214 /* Float+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96BA41ED53CDD00779214 /* Float+.swift */; };
 		AAD96BA71ED5618400779214 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD96BA61ED5618400779214 /* UICollectionView+.swift */; };
@@ -189,7 +188,6 @@
 		AAD96B801ED30DF200779214 /* UIViewController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		AAD96B821ED30E3300779214 /* UINavigationController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		AAD96B841ED30E5300779214 /* UIWindow+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
-		AAD96B861ED30E7E00779214 /* UITabBarController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarController+.swift"; sourceTree = "<group>"; };
 		AAD96B891ED3D5BA00779214 /* Calendar+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
 		AAD96B8B1ED3E34000779214 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
 		AAD96BA41ED53CDD00779214 /* Float+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
@@ -490,7 +488,6 @@
 				AAD96B801ED30DF200779214 /* UIViewController+.swift */,
 				AAD96B821ED30E3300779214 /* UINavigationController+.swift */,
 				AAD96B841ED30E5300779214 /* UIWindow+.swift */,
-				AAD96B861ED30E7E00779214 /* UITabBarController+.swift */,
 				AAD96BA61ED5618400779214 /* UICollectionView+.swift */,
 				AAD96BA81ED56F1F00779214 /* UIScrollView+.swift */,
 				AAD96BAA1ED5701600779214 /* UIScreen+.swift */,
@@ -689,7 +686,6 @@
 				3C383ED41DAE2FE800A8EACC /* CollectionListController.swift in Sources */,
 				3CEF48071DAD12BB002E63EF /* UICollectionView+Reusable.swift in Sources */,
 				3C3410B31DB085B800E60A62 /* ListDisplayDelegate.swift in Sources */,
-				AAD96B871ED30E7E00779214 /* UITabBarController+.swift in Sources */,
 				3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */,
 				AAD96B7B1ED30D9200779214 /* UIImageView+.swift in Sources */,
 				3C383ED01DAE2E5E00A8EACC /* TableGroupController.swift in Sources */,

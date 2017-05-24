@@ -8,6 +8,13 @@
 
 import UIKit
 
+/// Show alert
+///
+/// - Parameters:
+///   - title: message title
+///   - message: message content
+///   - cancelAction: cancel callback
+///   - okAction: okcallback
 func alert(
     title: String,
     message: String,
@@ -23,6 +30,12 @@ func alert(
     UIWindow.visibleViewController.present(alert, animated: true, completion: nil)
 }
 
+/// Show actionSheet
+///
+/// - Parameters:
+///   - title: message title
+///   - message: message content
+///   - actions: The set of the actions
 func actionSheet(
     title: String,
     message: String,

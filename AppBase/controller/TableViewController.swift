@@ -41,8 +41,8 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         return items.count
     }
 
-    func tableView(_ tableView: UITableView, cellForRowAt _: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: cellType.reusableId)!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return tableView.dequeueReusableCell(indexPath: indexPath, cellType: cellType)
     }
 
     func tableView(_: UITableView, didSelectRowAt _: IndexPath) {

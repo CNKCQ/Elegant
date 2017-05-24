@@ -60,6 +60,11 @@ extension UIView {
     public func removeSubviews() {
         subviews.forEach({ $0.removeFromSuperview() })
     }
+
+    /// Remove all gesture recognizers from view.
+    public func removeGestureRecognizers() {
+        gestureRecognizers?.forEach(removeGestureRecognizer)
+    }
 }
 
 // MARK: - Syntactic sugar for the frame
