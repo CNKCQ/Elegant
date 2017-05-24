@@ -19,7 +19,7 @@ extension UIImage {
     /// - Parameter tintColor: UIColor
     /// - Returns: A new image
     @discardableResult
-    class func image(withColor color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+    class func image(with color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
         UIGraphicsBeginImageContext(size)
         color.set()
         UIRectFill(CGRect(origin: CGPoint.zero, size: size))

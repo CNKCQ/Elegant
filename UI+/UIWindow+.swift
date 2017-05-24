@@ -11,7 +11,7 @@ import UIKit
 extension UIWindow {
 
     /// See: http://stackoverflow.com/questions/24825123/get-the-current-view-controller-from-the-app-delegate
-    static var visibleController: UIViewController {
+    static var visibleViewController: UIViewController {
         func findBestViewController(_ controller: UIViewController?) -> UIViewController? {
             if let presented = controller?.presentedViewController {
                 return findBestViewController(presented)

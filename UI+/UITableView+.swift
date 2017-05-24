@@ -21,4 +21,9 @@ extension UITableView {
     public func hideTailLine() {
         tableFooterView = UIView()
     }
+
+    /// Returns the items of the tableView
+    public var numberOfItems: Int {
+        return (0 ..< numberOfSections).reduce(0) { $0 + numberOfRows(inSection: $1) }
+    }
 }

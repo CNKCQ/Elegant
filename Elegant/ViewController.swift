@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let button = UIButton(frame: CGRect(x: 20, y: 70, width: 200, height: 44))
         button.addTarget(self, action: #selector(click), for: .touchUpInside)
         button.backgroundColor = UIColor.green
