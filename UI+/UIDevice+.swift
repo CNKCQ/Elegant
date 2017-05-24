@@ -9,4 +9,19 @@
 import UIKit
 
 extension UIDevice {
+
+    /// Returns identifierForVendor's uuid
+    static var idForVendor: String? {
+        return UIDevice.current.identifierForVendor?.uuidString
+    }
+
+    /// Returns true if the device is iPhone
+    static var isPhone: Bool {
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone
+    }
+
+    /// Returns true if the device is iPad
+    static var isPad: Bool {
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad
+    }
 }

@@ -19,18 +19,12 @@ extension UIImage {
     /// - Parameter tintColor: UIColor
     /// - Returns: A new image
     @discardableResult
-    func with(_ tintColor: UIColor) -> UIImage {
-        UIGraphicsBeginImageContextWithOptions(size, false, scale)
-        let context = UIGraphicsGetCurrentContext()
-        context?.translateBy(x: 0, y: size.height)
-        context?.scaleBy(x: 1.0, y: -1.0)
-        context?.setBlendMode(CGBlendMode.normal)
-        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height) as CGRect
-        context?.clip(to: rect, mask: cgImage!)
-        tintColor.setFill()
-        context?.fill(rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()! as UIImage
+    class func image(withColor color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+        UIGraphicsBeginImageContext(size)
+        color.set()
+        UIRectFill(CGRect(origin: CGPoint.zero, size: size))
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
-        return newImage
+        return image
     }
 }

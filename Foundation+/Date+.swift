@@ -10,9 +10,22 @@ import Foundation
 
 public extension Date {
 
+    /// Returns the earlier of the receiver and another given date.
+    ///
+    /// - Parameter date: The date with which to compare the receiver.
+    /// - Returns: The earlier of the receiver
     func earlierDate(_ date: Date) -> Date {
         let now = Date()
         return now < date ? now : date
+    }
+
+    /// Returns the later of the receiver and another given date.
+    ///
+    /// - Parameter date: The date with which to compare the receiver.
+    /// - Returns: The later of the receiver
+    func laterDate(_ date: Date) -> Date {
+        let now = Date()
+        return now < date ? date : now
     }
 
     /// Takes a past Date and creates a string representation of it.

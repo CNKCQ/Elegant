@@ -27,3 +27,18 @@ public extension UIFont {
         return systemFont(ofSize: systemFontSize)
     }
 }
+
+extension UIFont {
+
+    /// Returns a bolded version of `self`.
+    public var bolded: UIFont {
+        return fontDescriptor.withSymbolicTraits(.traitBold)
+            .map { UIFont(descriptor: $0, size: 0.0) } ?? self
+    }
+
+    /// Returns a italicized version of `self`.
+    public var italicized: UIFont {
+        return fontDescriptor.withSymbolicTraits(.traitItalic)
+            .map { UIFont(descriptor: $0, size: 0.0) } ?? self
+    }
+}

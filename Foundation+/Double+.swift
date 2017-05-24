@@ -9,6 +9,7 @@
 import Foundation
 
 public extension Double {
+
     ///  Returns a string representing the Double.
     var toString: String {
         return String(self)
