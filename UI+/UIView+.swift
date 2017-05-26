@@ -67,6 +67,79 @@ extension UIView {
     }
 }
 
+// MARK: - Border
+extension UIView {
+
+    /// Add a border for `self`
+    func addBorder(
+        _ strokeColor: UIColor = .red,
+        fillColor: UIColor = .clear,
+        width: CGFloat = 1,
+        cornerRadius: CGFloat = 5
+    ) {
+        addDashedBorder(strokeColor,
+                        fillColor: fillColor,
+                        width: width,
+                        dashPattern: nil,
+                        cornerRadius: cornerRadius)
+    }
+
+    /// Add dashedBorder for `self`
+    func addDashedBorder(
+        _ strokeColor: UIColor = .red,
+        fillColor: UIColor = .clear,
+        width: CGFloat = 1,
+        dashPattern: [NSNumber]? = [6, 3],
+        cornerRadius: CGFloat = 5
+    ) {
+        let shapeLayer: CAShapeLayer = CAShapeLayer()
+        shapeLayer.bounds = bounds
+        shapeLayer.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
+        shapeLayer.fillColor = fillColor.cgColor
+        shapeLayer.strokeColor = strokeColor.cgColor
+        shapeLayer.lineWidth = width
+        shapeLayer.lineJoin = kCALineJoinRound
+        shapeLayer.lineDashPattern = dashPattern
+        shapeLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+        layer.addSublayer(shapeLayer)
+    }
+
+    /// Add a line for `self`
+    func addLine(
+        _ color: UIColor = .red,
+        width: CGFloat = 1,
+        start: CGPoint,
+        end: CGPoint
+    ) {
+        addDashLine(color,
+                    width: width,
+                    start: start,
+                    end: end,
+                    dashPattern: nil)
+    }
+
+    /// Add a dashLine for `self`
+    func addDashLine(
+        _ color: UIColor = .red,
+        width: CGFloat = 1,
+        start: CGPoint,
+        end: CGPoint,
+        dashPattern: [NSNumber]? = [6, 3]
+    ) {
+        let shapeLayer: CAShapeLayer = CAShapeLayer()
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.strokeColor = color.cgColor
+        shapeLayer.lineWidth = width
+        shapeLayer.lineJoin = kCALineJoinMiter
+        shapeLayer.lineDashPattern = dashPattern
+        let path = UIBezierPath()
+        path.move(to: start)
+        path.addLine(to: end)
+        shapeLayer.path = path.cgPath
+        layer.addSublayer(shapeLayer)
+    }
+}
+
 // MARK: - Syntactic sugar for the frame
 extension UIView {
 

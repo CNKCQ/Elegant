@@ -17,6 +17,8 @@ class ViewController: UIViewController {
         let button = UIButton(frame: CGRect(x: 20, y: 70, width: 200, height: 44))
         button.addTarget(self, action: #selector(click), for: .touchUpInside)
         button.backgroundColor = UIColor.green
+        //        button.addDashedBorder(dashPattern: [6, 3])
+        view.addLine(start: CGPoint(x: 10, y: 80), end: CGPoint(x: 300, y: 400))
         view.addSubview(button)
         label = UILabel(frame: CGRect(x: 100, y: 120, width: 120, height: 60))
         label.backgroundColor = .red
