@@ -36,6 +36,17 @@ extension UITableView {
             $0 + numberOfRows(inSection: $1)
         }
     }
+
+    /// Reload data with animated which you want
+    ///
+    /// - Parameter animated: animated
+    public func reloadData(width animated: UITableViewRowAnimation = .automatic) {
+        if let indexPaths = indexPathsForVisibleRows {
+            reloadRows(at: indexPaths, with: animated)
+        } else {
+            reloadData()
+        }
+    }
 }
 
 // MARK: Reusable support for UITableView
@@ -108,4 +119,5 @@ public extension UITableView {
         }
         return view
     }
+
 }

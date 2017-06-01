@@ -8,8 +8,17 @@
 
 import UIKit
 
+
+// MARK: - convenience initializer declaration
+extension UIFont {
+
+    convenience init?(_ size: CGFloat) {
+        self.init(name: "HelveticaNeue", size: size)
+    }
+}
+
 // MARK: -  System fonts
-public extension UIFont {
+extension UIFont {
 
     public class var labelFont: UIFont {
         return systemFont(ofSize: labelFontSize)
