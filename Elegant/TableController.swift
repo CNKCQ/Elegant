@@ -19,6 +19,7 @@ class TableController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
     }
+
 }
 
 extension TableController: UITableViewDelegate, UITableViewDataSource {

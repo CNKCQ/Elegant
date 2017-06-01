@@ -36,46 +36,25 @@ extension UITableView {
             $0 + numberOfRows(inSection: $1)
         }
     }
-
-    /// Reload data with animated which you want
-    ///
-    /// - Parameter animated: animated
-    public func reloadData(width animated: UITableViewRowAnimation = .automatic) {
-        if let indexPaths = indexPathsForVisibleRows {
-            reloadRows(at: indexPaths, with: animated)
-        } else {
-            reloadData()
-        }
-    }
 }
 
 // MARK: Reusable support for UITableView
 
 public extension UITableView {
 
-    /**
-     Register a Class-Based `UITableViewCell` subclass (conforming to `Reusable`)
-
-     - parameter cellType: the `UITableViewCell` (`Reusable`-conforming) subclass to register
-
-     - seealso: `register(_:,forCellReuseIdentifier:)`
-     */
+    /// Register a Class-Based `UITableViewCell` subclass (conforming to `Reusable`)
+    ///
+    /// - Parameter cellType: the `UITableViewCell` (`Reusable`-conforming) subclass to register
     final func registerReusableCell<T: UITableViewCell>(cellType: T.Type) where T: Reusable {
         register(cellType.self, forCellReuseIdentifier: cellType.reuseIdentifier)
     }
 
-    /**
-     Returns a reusable `UITableViewCell` object for the class inferred by the return-type
-
-     - parameter indexPath: The index path specifying the location of the cell.
-     - parameter cellType: The cell class to dequeue
-
-     - returns: A `Reusable`, `UITableViewCell` instance
-
-     - note: The `cellType` parameter can generally be omitted and infered by the return type,
-     except when your type is in a variable and cannot be determined at compile time.
-     - seealso: `dequeueReusableCellWithIdentifier(_:,forIndexPath:)`
-     */
+    /// Returns a reusable `UITableViewCell` object for the class inferred by the return-type
+    ///
+    /// - Parameters:
+    ///   - indexPath: The index path specifying the location of the cell.
+    ///   - cellType: The cell class to dequeue
+    /// - Returns: A `Reusable`, `UITableViewCell` instance
     final func dequeueReusableCell<T: UITableViewCell>(indexPath: IndexPath, cellType: T.Type = T.self) -> T where T: Reusable {
         guard let cell = self.dequeueReusableCell(withIdentifier: cellType.reuseIdentifier, for: indexPath) as? T else {
             fatalError(
@@ -87,28 +66,17 @@ public extension UITableView {
         return cell
     }
 
-    /**
-     Register a Class-Based `UITableViewHeaderFooterView` subclass (conforming to `Reusable`)
-
-     - parameter viewType: the `UITableViewHeaderFooterView` (`Reusable`-confirming) subclass to register
-
-     - seealso: `register(_:,forHeaderFooterViewReuseIdentifier:)`
-     */
+    /// Register a Class-Based `UITableViewHeaderFooterView` subclass (conforming to `Reusable`)
+    ///
+    /// - Parameter viewType: the `UITableViewHeaderFooterView` (`Reusable`-confirming) subclass to register
     final func registerReusableHeaderFooterView<T: UITableViewHeaderFooterView>(viewType: T.Type) where T: Reusable {
         register(viewType.self, forHeaderFooterViewReuseIdentifier: viewType.reuseIdentifier)
     }
 
-    /**
-     Returns a reusable `UITableViewHeaderFooterView` object for the class inferred by the return-type
-
-     - parameter viewType: The view class to dequeue
-
-     - returns: A `Reusable`, `UITableViewHeaderFooterView` instance
-
-     - note: The `viewType` parameter can generally be omitted and infered by the return type,
-     except when your type is in a variable and cannot be determined at compile time.
-     - seealso: `dequeueReusableHeaderFooterView(withIdentifier:)`
-     */
+    /// Returns a reusable `UITableViewHeaderFooterView` object for the class inferred by the return-type
+    ///
+    /// - Parameter viewType: The view class to dequeue
+    /// - Returns: A `Reusable`, `UITableViewHeaderFooterView` instance
     final func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(viewType: T.Type = T.self) -> T? where T: Reusable {
         guard let view = self.dequeueReusableHeaderFooterView(withIdentifier: viewType.reuseIdentifier) as? T? else {
             fatalError(
