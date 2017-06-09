@@ -51,4 +51,15 @@ extension Dictionary {
     func has(_ key: Dictionary.Key) -> Bool {
         return keys.contains(key)
     }
+
+    /// Returns a new dictionary of `self` + dicts
+    func append(_ dicts: Dictionary) -> Dictionary {
+        var results = Dictionary()
+        [self, dicts].forEach { dic in
+            dic.forEach({ key, value in
+                results[key] = value
+            })
+        }
+        return results
+    }
 }

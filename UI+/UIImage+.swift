@@ -15,6 +15,21 @@ extension UIImage {
         return UIImageJPEGRepresentation(self, 1.0)?.base64EncodedString()
     }
 
+
+    /// Returns an image with the radius you give
+    ///
+    /// - Parameter radius: cornerRadius
+    /// - Returns: an image
+    func corner(radius: CGFloat) -> UIImage {
+        let frame = CGRect(origin: .zero, size: CGSize(width: self.size.width, height: self.size.height))
+        UIGraphicsBeginImageContextWithOptions(self.size, false, self.scale)
+        UIBezierPath(roundedRect: frame, cornerRadius: radius).addClip()
+        draw(in: frame)
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndPDFContext()
+        return image
+    }
+
     /// Image are created with tintColor.
     /// - Parameter tintColor: UIColor
     /// - Returns: A new image
@@ -27,4 +42,5 @@ extension UIImage {
         UIGraphicsEndImageContext()
         return image
     }
+
 }
