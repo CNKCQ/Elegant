@@ -191,7 +191,7 @@
 		AAD96B821ED30E3300779214 /* UINavigationController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		AAD96B841ED30E5300779214 /* UIWindow+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+.swift"; sourceTree = "<group>"; };
 		AAD96B891ED3D5BA00779214 /* Calendar+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
-		AAD96B8B1ED3E34000779214 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; };
+		AAD96B8B1ED3E34000779214 /* Test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Test.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		AAD96BA41ED53CDD00779214 /* Float+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
 		AAD96BA61ED5618400779214 /* UICollectionView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		AAD96BA81ED56F1F00779214 /* UIScrollView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+.swift"; sourceTree = "<group>"; };
@@ -300,7 +300,6 @@
 			children = (
 				3CEF480B1DAD1B00002E63EF /* View */,
 				3CEF480A1DAD1AC3002E63EF /* Model */,
-				3CEF48091DAD1AA7002E63EF /* Controller */,
 				3CEF47661DAB8136002E63EF /* TabBarController.swift */,
 				3CEF47671DAB8136002E63EF /* TableController.swift */,
 				3CEF470D1DAB808E002E63EF /* AppDelegate.swift */,
@@ -394,13 +393,6 @@
 				3CEF47461DAB8126002E63EF /* FileTool.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		3CEF48091DAD1AA7002E63EF /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		3CEF480A1DAD1AC3002E63EF /* Model */ = {
