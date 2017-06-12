@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         view.addSubview(label)
     }
 
-    func click() {
+    @objc func click() {
         DispatchQueue.main.async {
             self.label.frame = CGRect(x: 40, y: 200, width: 40, height: 40)
             self.label.backgroundColor = .blue
