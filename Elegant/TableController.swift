@@ -18,6 +18,8 @@ class TableController: UIViewController {
         tableView.dataSource = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
+
+        tableView.contentInset.top = 44
     }
 
 }

@@ -27,7 +27,7 @@ class TableViewController: ScrollViewController {
         tableView.dataSource = self
         navigationItem.titleView?.tintColor = navigationController?.navigationBar.barTintColor
         tableView.tableFooterView = UIView()
-        tableView.registerReusableCell(cellType: cellType)
+        tableView.register(cellType: cellType)
         view.addSubview(tableView)
     }
 
@@ -42,7 +42,7 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(indexPath: indexPath, cellType: cellType)
+        return tableView.dequeueReusableCell(for: indexPath, cellType: cellType)
     }
 
     func tableView(_: UITableView, didSelectRowAt _: IndexPath) {

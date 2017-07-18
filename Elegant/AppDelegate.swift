@@ -18,10 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         //        let arr = ["1", "3", "2", "4", "5", "6"]
         //        print("🌹", arr.random, "🌹", arr.shuffled)
-        Date.timeAgoSinceDate(Date() + TimeInterval(60), numericDates: true)
-        let dic = ["1": "one", "3": "three", "2": "two", "4": "four", "5": "five", "6": "six"]
-
-        let str = "Hello_World"
         //        print("🌹", str.camelCaseString(), "🌹")
         array()
         //        window = UIWindow(frame: UIScreen.main.bounds)
@@ -36,3 +32,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return ["", ""]
     }
 }
+
