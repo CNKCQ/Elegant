@@ -65,13 +65,14 @@ extension Array {
         }
         return subs
     }
+
+
 }
 
 print([1,1,1,2,2,2,3,3,3,4].uniq)
 print([1,1,1,2,2,2,3,3,3,4].uniq)
-print([1,1,1,2,2,2,3,3,3,4].uniq)
 
-print([[3, 4], [5, "St"], [7, 8],[9, 10, [11, 12, 13, [14, 15, [16, 17, 18]]]]].concat())
+print(CGFloat(100)/CGFloat(512))
 
 
 

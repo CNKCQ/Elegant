@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //        let rootController = ViewController()
         //        window?.rootViewController = rootController
         //        window?.makeKeyAndVisible()
+//        UIView.appearance().backgroundColor = UIColor.blue
         return true
     }
 

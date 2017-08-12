@@ -58,6 +58,9 @@
 		3CEF48141DAD2910002E63EF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF48131DAD2910002E63EF /* TableViewCell.swift */; };
 		3CEF48171DADCD37002E63EF /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEF48161DADCD37002E63EF /* Tools.swift */; };
 		7FF802DF9FA1D36984F66C1F /* Pods_Elegant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FE27A99EBDA0B574DED1EA /* Pods_Elegant.framework */; };
+		AA1052441F3F2CD900B55751 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1052431F3F2CD900B55751 /* LineViewController.swift */; };
+		AA1052461F3F2CF100B55751 /* CommonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA1052451F3F2CF100B55751 /* CommonController.swift */; };
+		AA25D8231F330C6100EDE0E2 /* UISearchBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA25D8221F330C6100EDE0E2 /* UISearchBar+.swift */; };
 		AA5094951ECD89D0002DC62E /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = AA5094941ECD89D0002DC62E /* README.md */; };
 		AA965FDB1F05530800581AC2 /* UITraitCollection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA965FDA1F05530800581AC2 /* UITraitCollection+.swift */; };
 		AA965FDD1F05540400581AC2 /* UIEdgeInsets+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA965FDC1F05540400581AC2 /* UIEdgeInsets+.swift */; };
@@ -166,6 +169,9 @@
 		3CEF48161DADCD37002E63EF /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
 		8D943195555E0C59EBCBE83E /* Pods-Elegant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elegant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elegant/Pods-Elegant.debug.xcconfig"; sourceTree = "<group>"; };
 		A2AC9D46CB170EADF0DBA069 /* Pods-Elegant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elegant.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elegant/Pods-Elegant.release.xcconfig"; sourceTree = "<group>"; };
+		AA1052431F3F2CD900B55751 /* LineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		AA1052451F3F2CF100B55751 /* CommonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonController.swift; sourceTree = "<group>"; };
+		AA25D8221F330C6100EDE0E2 /* UISearchBar+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+.swift"; sourceTree = "<group>"; };
 		AA5094941ECD89D0002DC62E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AA965FDA1F05530800581AC2 /* UITraitCollection+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITraitCollection+.swift"; sourceTree = "<group>"; };
 		AA965FDC1F05540400581AC2 /* UIEdgeInsets+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+.swift"; sourceTree = "<group>"; };
@@ -318,6 +324,8 @@
 				3CBF04F21DF11D1C00F9A289 /* MyTableController.swift */,
 				3CBF04F41DF1248200F9A289 /* main.swift */,
 				3C20F6971DF2FBE100D6C5BA /* DiscoverController.swift */,
+				AA1052431F3F2CD900B55751 /* LineViewController.swift */,
+				AA1052451F3F2CF100B55751 /* CommonController.swift */,
 			);
 			path = Elegant;
 			sourceTree = "<group>";
@@ -486,6 +494,7 @@
 				AA965FDA1F05530800581AC2 /* UITraitCollection+.swift */,
 				AA965FDC1F05540400581AC2 /* UIEdgeInsets+.swift */,
 				AA965FDE1F05591400581AC2 /* Object+.swift */,
+				AA25D8221F330C6100EDE0E2 /* UISearchBar+.swift */,
 			);
 			name = "UI+";
 			path = "../UIKit.plus/UI+";
@@ -644,6 +653,7 @@
 				3CEF47561DAB8126002E63EF /* TableViewController.swift in Sources */,
 				3C383ECA1DAE2A4B00A8EACC /* ScrollViewController.swift in Sources */,
 				3C3410AD1DB0851700E60A62 /* ListSectionController.swift in Sources */,
+				AA1052441F3F2CD900B55751 /* LineViewController.swift in Sources */,
 				AAF3F4C41EEF9A050091F66C /* UIImageView+.swift in Sources */,
 				AAACF84D1F00EA4B00F039C9 /* UserDefaults+.swift in Sources */,
 				AAACF8471F00EA4B00F039C9 /* Dictionary+.swift in Sources */,
@@ -687,6 +697,7 @@
 				3C3410B31DB085B800E60A62 /* ListDisplayDelegate.swift in Sources */,
 				3CEF47691DAB8136002E63EF /* TabBarController.swift in Sources */,
 				AAF3F4BE1EEF9A050091F66C /* UIButton+.swift in Sources */,
+				AA25D8231F330C6100EDE0E2 /* UISearchBar+.swift in Sources */,
 				3C383ED01DAE2E5E00A8EACC /* TableGroupController.swift in Sources */,
 				AAF3F4BD1EEF9A050091F66C /* UIAlertController+.swift in Sources */,
 				AAF3F4C71EEF9A050091F66C /* UIScreen+.swift in Sources */,
@@ -708,6 +719,7 @@
 				3C3410C11DB0C93600E60A62 /* GCD.swift in Sources */,
 				3CEF47491DAB8126002E63EF /* BaseDelegate.swift in Sources */,
 				AAF3F4CD1EEF9A050091F66C /* UIWindow+.swift in Sources */,
+				AA1052461F3F2CF100B55751 /* CommonController.swift in Sources */,
 				3CBF04F51DF1248200F9A289 /* main.swift in Sources */,
 				AAF3F4C31EEF9A050091F66C /* UIImage+.swift in Sources */,
 				3C3410C31DB0D3D100E60A62 /* Expandable.swift in Sources */,

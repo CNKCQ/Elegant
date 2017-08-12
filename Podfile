@@ -7,6 +7,7 @@ target 'Elegant' do
     pod 'RxSwift'
     pod 'RxCocoa'
     pod 'Alamofire'
+    pod 'SnapKit'
 #    pod 'Moya', :git => 'https://github.com/Moya/Moya.git', :branch => 'swift-3.0'
 #    pod 'XCGLogger'
 #  pod 'DigitalKeyboard'
