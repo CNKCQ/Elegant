@@ -63,8 +63,5 @@ class LineViewController: UIViewController {
             make.height.equalTo(44)
             make.width.equalTo(120)
         }
-
-
-
     }
 }

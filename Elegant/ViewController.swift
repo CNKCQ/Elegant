@@ -68,3 +68,16 @@ struct CustomItem {
     var dest: UIViewController.Type
 }
 
+struct BaseModel {
+
+}
+
+struct Model<T: Modelable>: Modelable {
+
+}
+
+protocol Modelable {
+
+}
+
+
