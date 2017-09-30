@@ -7,14 +7,16 @@
     "94AA69814F140F03F0584AAA1D22AC9D041C53BA" : 9223372036854775807,
     "8B4CE5221BCD6C9745E199C845F9D8B63122E52E" : 9223372036854775807,
     "780FE6786AB4FA80657AA18F4E0520A0CDE33F6E" : 9223372036854775807,
-    "F812E87A9277E2D3669FC1A2526EBA88102C6CF1" : 9223372036854775807
+    "F812E87A9277E2D3669FC1A2526EBA88102C6CF1" : 9223372036854775807,
+    "D99A4A53CB9E7AE32DAA5160F6280A423D0B7A0E" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60E5A6F0-1C78-48B7-8A23-BFC8C8BDAC1F",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "94AA69814F140F03F0584AAA1D22AC9D041C53BA" : "Foundation.plus\/",
     "8B4CE5221BCD6C9745E199C845F9D8B63122E52E" : "Elegant\/",
     "780FE6786AB4FA80657AA18F4E0520A0CDE33F6E" : "UIKit.plus\/",
-    "F812E87A9277E2D3669FC1A2526EBA88102C6CF1" : "iOSKit\/"
+    "F812E87A9277E2D3669FC1A2526EBA88102C6CF1" : "iOSKit\/",
+    "D99A4A53CB9E7AE32DAA5160F6280A423D0B7A0E" : "Functions\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "Elegant",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -34,6 +36,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CNKCQ\/Foundation.plus.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94AA69814F140F03F0584AAA1D22AC9D041C53BA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ModulizationSwift\/Functions.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D99A4A53CB9E7AE32DAA5160F6280A423D0B7A0E"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/CNKCQ\/iOSKit.git",

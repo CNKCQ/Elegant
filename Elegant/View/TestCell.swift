@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TestCell: TableViewCell {
+class TestCell: StaticTableViewCell {
     var nameLabel: UILabel = {
         $0.backgroundColor = .yellow
         $0.frame = CGRect(x: 5, y: 5, width: 200, height: 40)

@@ -69,11 +69,12 @@ extension Array {
 
 }
 
-print([1,1,1,2,2,2,3,3,3,4].uniq)
-print([1,1,1,2,2,2,3,3,3,4].uniq)
+//print([1,1,1,2,2,2,3,3,3,4].uniq)
+//print([1,1,1,2,2,2,3,3,3,4].uniq)
+//
+//print(CGFloat(100)/CGFloat(512))
 
-print(CGFloat(100)/CGFloat(512))
-
-
+let b = Float64(Int64(10)) / Float64(Int64(3))
+b
 
 

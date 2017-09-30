@@ -9,9 +9,11 @@
 import UIKit
 
 class TabBarController: BaseTabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         _ = UITableViewController()
+
     }
 
     override func tabBarController(_: UITabBarController, shouldSelect _: UIViewController) -> Bool {

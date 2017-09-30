@@ -11,6 +11,7 @@ import UIKit
 class TableController: UIViewController {
     var items: [String] = []
     var tableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView = UITableView(frame: view.bounds)
@@ -19,6 +20,11 @@ class TableController: UIViewController {
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
         tableView.contentInset.top = 44
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.deselectAll(animated: false)
     }
 
 }

@@ -13,7 +13,7 @@ import Foundation_
 class TableViewController: ScrollViewController {
     var tableView: UITableView!
     var tableViewStyle: UITableViewStyle = .plain
-    var cellType = TableViewCell.self
+    var cellType = StaticTableViewCell.self
 
     override func viewDidLoad() {
         onPrepare()

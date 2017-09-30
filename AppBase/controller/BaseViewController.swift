@@ -22,3 +22,5 @@ class BaseViewController: UIViewController {
         //        log.warning("内存警告⚠️\(classForCoder)")
     }
 }
+
+

@@ -10,74 +10,59 @@ import UIKit
 import RxCocoa
 import SnapKit
 
-class ViewController: UIViewController {
-    var tableView: UITableView!
-    var items: [CustomItem] = [
-        CustomItem(
-            title: "BorderLine",
-            dest: LineViewController.self
-        ),
-        CustomItem(
-            title: "common",
-            dest: CommonController.self
-        ),
-    ]
+var viewC = UIViewController()
+
+class ViewController: TableGroupController {
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView = UITableView()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(cellType: UITableViewCell.self)
-        tableView.hideTailLine()
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(self.view)
-        }
+        let firstTitleview = UILabel()
+        firstTitleview.backgroundColor = .white
+        firstTitleview.textAlignment = .center
+        firstTitleview.text = "来吧"
+        viewC = self
+        let firstItem = [
+            Item(
+                title: "BorderLine",
+                dest: LineViewController.self,
+                cellType: StaticTableViewCell.self
+            ),
+            Item(
+                title: "common",
+                dest: CommonController.self,
+                cellType: MoreCell.self
+            ),
+            ]
+
+        self.sections = [
+            SectionItem(
+                title: "第一",
+                titleView: firstTitleview,
+                items: firstItem
+            ),
+            SectionItem(
+                title: "second",
+                items: firstItem
+            ),
+        ]
     }
 
-
-
-}
-
-extension ViewController: UITableViewDelegate {
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dest = items[indexPath.row].dest.init()
-        self.navigationController?.pushViewController(dest, animated: true)
+    override func onPrepare() {
+        cellTypes = [
+            MoreCell.self,
+            StaticTableViewCell.self
+        ]
+        tableViewStyle = .grouped
     }
 
-}
-
-extension ViewController: UITableViewDataSource {
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: UITableViewCell.self)
-        cell.textLabel?.text = items[indexPath.row].title
-        return cell
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.deselectAll(animated: false)
     }
 }
 
-struct CustomItem {
-    var title: String
-    var dest: UIViewController.Type
-}
 
-struct BaseModel {
 
-}
-
-struct Model<T: Modelable>: Modelable {
-
-}
-
-protocol Modelable {
-
-}
 
 
