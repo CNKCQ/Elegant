@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.3.0)
-  - Foundation+ (0.0.6)
+  - Foundation+ (0.0.7)
   - Functions (0.1.0)
   - RxCocoa (3.2.0):
     - RxSwift (~> 3.1)
@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  Foundation+: 92f8e2fb0092d0670f733c9e408410c88c1d09c8
+  Foundation+: 5b024c9f1b5e65bba18c04cbdc9a882bd2e6ba0a
   Functions: 8bd68ac6f82002f5cb811a1ab34d77a97155c0d9
   RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
   RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0

@@ -10,7 +10,7 @@ import UIKit
 
 class ViewPagerController: UIViewController {
     var titleView: TitleView!
-    let style = TitleStyle(titleBgColor: .white, isShowBottomLine: true, bottomLineColor: .orange, bottomLineH: 5)
+    let style = TitleStyle(titleBgColor: .white, isShowBottomLine: true, bottomLineColor: .orange, bottomLineH: 3)
     var viewPagers: [ViewPager] = []
     var pageDidAppear: ((_ toPage: UIViewController, _ index: Int) -> Void)?
     var didSelected: ((_ index: Int) -> Void)?

@@ -78,20 +78,33 @@ class PagerTabController: UITabBarController {
         case .changed:
             if self.shouldUpdateProgress == true {
                 self.viewPagerTabBarDelete?.interactiveTransition.update(progress)
-                (self.parent as? ViewPagerController)?.titleView.setTitleWithProgress(progress, fromIndex: self.viewPagerTabBarDelete.fromIndex, toIndex: self.viewPagerTabBarDelete.toIndex)
+                (self.parent as? ViewPagerController)?
+                    .titleView.setTitleWithProgress(progress,
+                                                    fromIndex: self.viewPagerTabBarDelete.fromIndex,
+                                                    toIndex: self.viewPagerTabBarDelete.toIndex)
             }
         case .ended, .cancelled, .failed:
             if shouldUpdateProgress == true {
                 if progress > 0.3 {
-                    self.viewPagerTabBarDelete?.interactiveTransition.completionSpeed = 0.99
-                    self.viewPagerTabBarDelete?.interactiveTransition.finish()
-                    (self.parent as? ViewPagerController)?.titleView.setTitleWithProgress(progress, fromIndex: self.viewPagerTabBarDelete.fromIndex, toIndex: self.viewPagerTabBarDelete.toIndex)
+                    self.viewPagerTabBarDelete?
+                        .interactiveTransition
+                        .completionSpeed = 0.99
+                    self.viewPagerTabBarDelete?
+                        .interactiveTransition.finish()
+                    (self.parent as? ViewPagerController)?.titleView
+                        .setTitleWithProgress(progress,
+                                              fromIndex: self.viewPagerTabBarDelete.fromIndex,
+                                              toIndex: self.viewPagerTabBarDelete.toIndex)
                     (self.parent as? ViewPagerController)?.titleView.finishProgress(index: self.viewPagerTabBarDelete.toIndex)
                     self.viewPagerTabBarDelete?.interactive = false
                     self.pageDidAppear?(self.childViewControllers[self.selectedIndex], self.selectedIndex)
                 } else {
-                    self.viewPagerTabBarDelete?.interactiveTransition.completionSpeed = 0.99
-                    (self.parent as? ViewPagerController)?.titleView.setTitleWithProgress(progress, fromIndex: self.viewPagerTabBarDelete.toIndex, toIndex: self.viewPagerTabBarDelete.fromIndex)
+                    self.viewPagerTabBarDelete?
+                        .interactiveTransition.completionSpeed = 0.99
+                    (self.parent as? ViewPagerController)?.titleView
+                        .setTitleWithProgress(progress,
+                                              fromIndex: self.viewPagerTabBarDelete.toIndex,
+                                              toIndex: self.viewPagerTabBarDelete.fromIndex)
                     (self.parent as? ViewPagerController)?.titleView.finishProgress(index: self.viewPagerTabBarDelete.fromIndex)
                     self.viewPagerTabBarDelete?.interactiveTransition.cancel()
                 }

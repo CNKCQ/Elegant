@@ -22,7 +22,8 @@ public struct TitleStyle {
     var titleMargin : CGFloat = 20
     /// titleView的高度
     var titleHeight : CGFloat = 44
-    /// titleView的北京颜色
+    
+    /// titleView's backgroundColor
     var titleBgColor : UIColor = .clear
     /// 是否显示底部滚动条
     var isShowBottomLine : Bool = false
@@ -51,7 +52,7 @@ public struct TitleStyle {
             normalColor : UIColor = UIColor(r: 0, g: 0, b: 0),
             selectedColor : UIColor = UIColor(r: 255, g: 127, b: 0),
             font : UIFont = UIFont.systemFont(ofSize: 14.0),
-            titleMargin : CGFloat = 20,
+            titleMargin : CGFloat = 25,
             titleHeight : CGFloat = 44,
             titleBgColor : UIColor = .clear,
             isShowBottomLine : Bool = false,

@@ -75,6 +75,46 @@ extension Array {
 //print(CGFloat(100)/CGFloat(512))
 
 let b = Float64(Int64(10)) / Float64(Int64(3))
-b
 
+public extension UIColor {
+    
+    convenience init(r : CGFloat, g : CGFloat, b : CGFloat) {
+        self.init(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: 1.0)
+    }
+    
+    static var random: UIColor {
+        return UIColor(r: CGFloat(arc4random_uniform(256)), g: CGFloat(arc4random_uniform(256)), b: CGFloat(arc4random_uniform(256)))
+    }
+    
+    var components: [CGFloat] {
+        var (r, g, b, a): (CGFloat, CGFloat, CGFloat, CGFloat) = (0.0, 0.0, 0.0, 0.0)
+        getRed(&r, green: &g, blue: &b, alpha: &a)
+        return [r, g, b, a]
+    }
+}
+
+
+let black = UIColor.black
+//let gray = UIColor.gray
+//let gray1 = UIColor(r: 125, g: 125, b: 0)
+let lightGray = UIColor.lightGray
+//let green = UIColor.green
+//let blue = UIColor.blue
+//let white = UIColor.white
+//let brown = UIColor.brown
+//let yellow = UIColor.yellow
+//let purple = UIColor.purple
+let rgb = UIColor(displayP3Red: 2/255, green: 255/255, blue: 255/255, alpha: 1)
+
+
+print(rgb.components)
+
+//print(gray.cgColor.components)
+print(lightGray.cgColor.components)
+//print(green.cgColor.components)
+//print(blue.cgColor.components)
+//print(white.cgColor.components)
+//print(brown.cgColor.components)
+//print(yellow.cgColor.components)
+//print(purple.cgColor.components)
 
