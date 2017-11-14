@@ -1,11 +1,11 @@
 PODS:
-  - Alamofire (4.3.0)
+  - Alamofire (4.5.1)
   - Foundation+ (0.0.7)
   - Functions (0.1.0)
-  - RxCocoa (3.2.0):
-    - RxSwift (~> 3.1)
-  - RxSwift (3.2.0)
-  - SnapKit (3.2.0)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SnapKit (4.0.0)
   - UI+ (0.0.4)
 
 DEPENDENCIES:
@@ -26,12 +26,12 @@ EXTERNAL SOURCES:
     :path: ../UIKit.plus
 
 SPEC CHECKSUMS:
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Foundation+: 5b024c9f1b5e65bba18c04cbdc9a882bd2e6ba0a
   Functions: 8bd68ac6f82002f5cb811a1ab34d77a97155c0d9
-  RxCocoa: ccdf43101a70407097a29082f648ba1676075b30
-  RxSwift: 46574f70d416b7923c237195939cc488a7fbf3a0
-  SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   UI+: be363101292cf8fbe0be305b29cb9f10a2c19141
 
 PODFILE CHECKSUM: 24ee45051e9334c7b0eca06345e2b0a0d79edfa3

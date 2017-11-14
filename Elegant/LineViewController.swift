@@ -72,7 +72,7 @@ class LineViewController: UIViewController {
         }
     }
     
-    func touchUp() {
+    @objc func touchUp() {
         self.present(viewC, animated: true, completion: nil)
 //        self.present(line, animated: true)
     }

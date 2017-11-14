@@ -174,7 +174,7 @@ extension TitleView {
             .forEach { $0.textColor = UIColor(r: normalColor.0, g: normalColor.1, b: normalColor.2)}
     }
     
-    func setTitleWithProgress(_ progress : CGFloat, fromIndex : Int, toIndex : Int) {
+    func updateProgress(_ progress : CGFloat, fromIndex : Int, toIndex : Int) {
 
         let sourceLabel = titleLabels[fromIndex]
         let targetLabel = titleLabels[toIndex]

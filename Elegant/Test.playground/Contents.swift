@@ -52,7 +52,6 @@ extension Array {
         return result
     }
 
-
     /// 数组降维
     func concat() -> Array<Any> {
         var subs: [Any] = []
@@ -111,10 +110,35 @@ print(rgb.components)
 
 //print(gray.cgColor.components)
 print(lightGray.cgColor.components)
-//print(green.cgColor.components)
-//print(blue.cgColor.components)
-//print(white.cgColor.components)
-//print(brown.cgColor.components)
-//print(yellow.cgColor.components)
-//print(purple.cgColor.components)
+
+
+
+
+
+
+public extension Array where Element: Equatable {
+    
+    /// The index method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+    ///
+    /// - Parameter element: a given element
+    /// - Returns: The index of the element at the array
+    @discardableResult
+    func index(of element: Element) -> Int {
+        return index(of: element) ?? -1
+    }
+    
+    /// Remove first collection element that is equal to the given `object`:
+    ///
+    /// - Parameter object: The element will remove form the array
+    mutating func remove(_ object: Element) {
+        if index(of: object) >= 0 {
+            remove(at: index(of: object))
+        }
+    }
+}
+
+var arr = [1, 3, 5]
+let arrnew = arr
+arrnew
+
 

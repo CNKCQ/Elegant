@@ -51,7 +51,7 @@ class PagerTabController: UITabBarController {
         self.delegate = self.viewPagerTabBarDelete
     }
     
-    func onPan(gesture: UIPanGestureRecognizer)  {
+    @objc func onPan(gesture: UIPanGestureRecognizer)  {
         
         let tranlationX = gesture.translation(in: self.view).x
         let progress = fabs(tranlationX/self.view.frame.size.width)
@@ -79,7 +79,7 @@ class PagerTabController: UITabBarController {
             if self.shouldUpdateProgress == true {
                 self.viewPagerTabBarDelete?.interactiveTransition.update(progress)
                 (self.parent as? ViewPagerController)?
-                    .titleView.setTitleWithProgress(progress,
+                    .titleView.updateProgress(progress,
                                                     fromIndex: self.viewPagerTabBarDelete.fromIndex,
                                                     toIndex: self.viewPagerTabBarDelete.toIndex)
             }
@@ -92,7 +92,7 @@ class PagerTabController: UITabBarController {
                     self.viewPagerTabBarDelete?
                         .interactiveTransition.finish()
                     (self.parent as? ViewPagerController)?.titleView
-                        .setTitleWithProgress(progress,
+                        .updateProgress(progress,
                                               fromIndex: self.viewPagerTabBarDelete.fromIndex,
                                               toIndex: self.viewPagerTabBarDelete.toIndex)
                     (self.parent as? ViewPagerController)?.titleView.finishProgress(index: self.viewPagerTabBarDelete.toIndex)
@@ -102,7 +102,7 @@ class PagerTabController: UITabBarController {
                     self.viewPagerTabBarDelete?
                         .interactiveTransition.completionSpeed = 0.99
                     (self.parent as? ViewPagerController)?.titleView
-                        .setTitleWithProgress(progress,
+                        .updateProgress(progress,
                                               fromIndex: self.viewPagerTabBarDelete.toIndex,
                                               toIndex: self.viewPagerTabBarDelete.fromIndex)
                     (self.parent as? ViewPagerController)?.titleView.finishProgress(index: self.viewPagerTabBarDelete.fromIndex)

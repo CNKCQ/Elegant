@@ -15,7 +15,7 @@ class CollectionViewController: ScrollViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView = UICollectionView(frame: view.bounds)
-        collectionView.register(cellType: cellType)
+//        collectionView.register(cellType: cellType)
         view.addSubview(collectionView)
     }
 
