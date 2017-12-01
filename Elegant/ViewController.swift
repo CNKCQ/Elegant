@@ -21,6 +21,16 @@ class ViewController: TableGroupController {
         firstTitleview.backgroundColor = .white
         firstTitleview.textAlignment = .center
         firstTitleview.text = "来吧"
+        let refreshHeader = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 40))
+        refreshHeader.backgroundColor = UIColor.red
+        tableView.refreshHeader = refreshHeader
+        tableView.addSubview(tableView.refreshHeader!)
+        let loadMoreFooter = UIView(frame: CGRect(x: 0, y: 400, width: 200, height: 40))
+        loadMoreFooter.backgroundColor = UIColor.random
+        tableView.loadMoreFooter = loadMoreFooter
+        tableView.addSubview(tableView.loadMoreFooter!)
+        
+        
         viewC = self
         let firstItem = [
             Item(
@@ -46,6 +56,7 @@ class ViewController: TableGroupController {
                 items: firstItem
             ),
         ]
+        
     }
 
     override func onPrepare() {
@@ -55,6 +66,11 @@ class ViewController: TableGroupController {
         ]
         tableViewStyle = .grouped
     }
+    
+    override func tableView(_: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dic: Dictionary = ["key": "你好"]
+        print(dic)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -63,6 +79,30 @@ class ViewController: TableGroupController {
 }
 
 
-
+extension UIScrollView {
+    
+    private struct AssociatedKeys {
+        static var headerKey = "UIScrollView.refreshHeader"
+        static var footerKey = "UIScrollView.loadMoreFooter"
+    }
+    
+    var refreshHeader: UIView? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.headerKey) as? UIView
+        }
+        set (header) {
+            objc_setAssociatedObject(self, &AssociatedKeys.headerKey, header, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+    
+    var loadMoreFooter: UIView? {
+        get {
+            return objc_getAssociatedObject(self, &AssociatedKeys.footerKey) as? UIView
+        }
+        set (footer) {
+            objc_setAssociatedObject(self, &AssociatedKeys.footerKey, footer, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        }
+    }
+}
 
 

@@ -137,8 +137,39 @@ public extension Array where Element: Equatable {
     }
 }
 
-var arr = [1, 3, 5]
-let arrnew = arr
-arrnew
+//var arr = [1, 3, 5]
+//let arrnew = arr
+//arrnew
 
+func queryComponents(_ key: String, _ value: Any) -> [(String, String)] {
+    var components: [(String, String)] = []
+    
+    if let dictionary = value as? [String:Any] {
+        for (nestedKey, value) in dictionary {
+            components += queryComponents("\(key)[\(nestedKey)]", value)
+        }
+    } else if let array = value as? [Any] {
+        for value in array {
+            components += queryComponents("\(key)[]", value)
+        }
+    } else {
+        components.append((key, String(describing: value)))
+    }
+    
+    return components
+}
+
+let arrdic: [String: Any] = [
+    "name": "jack",
+    "age": 18,
+    "gender": "male",
+    "pet":[
+        "name": "dog",
+        "gender": "male"
+    ]
+]
+// convert dic to tuple
+let arrtuple: [(String, String)] = arrdic.flatMap(queryComponents)
+
+print(arrdic, arrtuple)
 
